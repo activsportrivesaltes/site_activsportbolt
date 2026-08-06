@@ -1,4 +1,4 @@
-import { Facebook, Mail, Phone, MapPin, Lock } from 'lucide-react';
+import { Facebook, Mail, Phone, MapPin } from 'lucide-react';
 
 const quickLinks = [
   { label: 'Le club', href: '#/le-club' },
@@ -23,7 +23,11 @@ export default function Footer() {
               <span className="font-heading text-lg font-bold">A</span>
             </div>
             <div className="leading-tight">
-              <span className="block font-heading text-base font-bold">Activ' Sport Rivesaltes</span>
+              <span className="block font-heading text-base font-bold">
+                <span className="text-brand-green-300">Activ'</span>{' '}
+                <span className="text-brand-yellow-300">Sport</span>{' '}
+                <span className="text-brand-purple-200">Rivesaltes</span>
+              </span>
               <span className="block text-xs uppercase tracking-wider text-brand-purple-200">
                 Sport bien-être pour tous
               </span>
@@ -78,7 +82,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Réseaux & espace adhérent */}
+        {/* Réseaux */}
         <div>
           <h3 className="font-heading text-sm font-semibold uppercase tracking-wider text-brand-yellow-300">
             Suivez-nous
@@ -102,21 +106,17 @@ export default function Footer() {
               activsportrivesaltes.fr
             </a>
           </div>
-
-          <button
-            type="button"
-            disabled
-            className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm text-brand-purple-200"
-          >
-            <Lock className="h-4 w-4" />
-            Espace adhérent — bientôt disponible
-          </button>
         </div>
       </div>
 
       <div className="border-t border-white/10">
         <div className="container-page flex flex-col items-center justify-between gap-2 py-5 text-xs text-brand-purple-200 sm:flex-row">
-          <p>© {new Date().getFullYear()} Activ' Sport Rivesaltes. Tous droits réservés.</p>
+          <p>
+            © {new Date().getFullYear()}{' '}
+            <span className="text-brand-green-300">Activ'</span>{' '}
+            <span className="text-brand-yellow-300">Sport</span>{' '}
+            <span className="text-brand-purple-100">Rivesaltes</span>. Tous droits réservés.
+          </p>
           <div className="flex gap-4">
             <a href="#/mentions-legales" className="hover:text-white">
               Mentions légales

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Menu, X, Lock } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 type NavItem = { label: string; href: string };
 
@@ -75,20 +75,6 @@ export default function Header({ currentPath }: { currentPath: string }) {
         </nav>
 
         <div className="flex items-center gap-2">
-          {/* Espace adhérent — désactivé, bientôt disponible */}
-          <button
-            type="button"
-            disabled
-            title="Bientôt disponible"
-            className="hidden items-center gap-2 rounded-full border border-gray-200 px-4 py-2 text-sm font-medium text-gray-400 sm:inline-flex"
-          >
-            <Lock className="h-4 w-4" />
-            Espace adhérent
-            <span className="ml-1 rounded-full bg-gray-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide">
-              Bientôt
-            </span>
-          </button>
-
           {/* CTA Rejoindre */}
           <a href="#/inscription" className="btn btn-primary hidden sm:inline-flex">
             Rejoindre le club

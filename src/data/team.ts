@@ -36,6 +36,15 @@ export const team: TeamMember[] = [
     image: 'https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
 
+    {
+    id: '11',
+    name: 'Bureau',
+    role: '',
+    certification: ' ',
+    activities: [],
+    image: '/images/Roland.jpg',
+  },
+
   {
     id: '4',
     name: 'Axelle',

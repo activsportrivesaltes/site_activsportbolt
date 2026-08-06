@@ -128,7 +128,7 @@ export default function HomePage() {
               className="h-48 w-full rounded-2xl object-cover shadow-soft sm:h-64"
             />
             <img
-              src="https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=500"
+              src="/images/Photo_Rivesaltes.jpg"
               alt="Sortie marche nordique en nature"
               className="mt-8 h-48 w-full rounded-2xl object-cover shadow-soft sm:h-64"
             />

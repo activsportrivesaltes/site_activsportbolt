@@ -17,12 +17,23 @@ const colorClasses: Record<string, { bg: string; text: string }> = {
   green: { bg: 'bg-brand-green-100', text: 'text-brand-green-700' },
   purple: { bg: 'bg-brand-purple-100', text: 'text-brand-purple-700' },
 };
+
+function ActivSportRivesaltesWordmark() {
+  return (
+    <>
+      <span className="text-brand-green-700">Activ'</span>{' '}
+      <span className="text-brand-yellow-500">Sport</span>{' '}
+      <span className="text-brand-purple-800">Rivesaltes</span>
+    </>
+  );
+}
+
 export default function ClubPage() {
   return (
     <div>
       <PageHero
         eyebrow="Le club"
-        title={<><span className="text-brand-green-700">Activ'</span> <span className="text-brand-yellow-500">Sport</span> <span className="text-brand-purple-800">Rivesaltes</span></>}
+        title={<ActivSportRivesaltesWordmark />}
         subtitle="Club associatif de sport bien-être, affilié à la Fédération Française du Sport Vitalité, agréé Jeunesse et Sports."
       />
 
@@ -41,7 +52,7 @@ export default function ClubPage() {
               <p>
                 Au fil des saisons, l'offre s'est enrichie — marche nordique, pilates, yoga, zumba —
                 pour répondre aux attentes d'un public de plus en plus large. En devenant
-                <strong> Activ' Sport Rivesaltes</strong>, le club a affirmé son identité : un club
+                <strong> <ActivSportRivesaltesWordmark /></strong>, le club a affirmé son identité : un club
                 associatif ouvert à toutes et à tous, centré sur le bien-être et la vitalité.
               </p>
               <p>
@@ -96,7 +107,7 @@ export default function ClubPage() {
           <div className="lg:col-span-2">
             <h2 className="font-heading text-2xl font-bold text-brand-purple-900">Affiliation & agréments</h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              Activ' Sport Rivesaltes est affilié à la <strong>Fédération Française du Sport Vitalité (FFSV)</strong>,
+              <strong><ActivSportRivesaltesWordmark /></strong> est affilié à la <strong>Fédération Française du Sport Vitalité (FFSV)</strong>,
               réseau national d'associations promouvant la santé par l'activité physique. Le club est
               également <strong>agréé Jeunesse et Sports</strong>, garantissant le sérieux de son
               encadrement et de son fonctionnement associatif.

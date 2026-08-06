@@ -13,7 +13,7 @@ export default function ActivitiesPage() {
     <div>
       <PageHero
         eyebrow="Nos activités"
-        title="14 activités pour bouger à votre rythme"
+        title="13 activités pour bouger à votre rythme"
         subtitle="Du fitness à la gym douce, du yoga à la marche nordique — il y a forcément une activité faite pour vous. Cliquez sur une activité pour en savoir plus."
       />
 
