@@ -81,6 +81,9 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+        <div>
+          <p>bojour</p>
+        </div>
 
         {/* Réseaux */}
         <div>
