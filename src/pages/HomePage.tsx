@@ -53,17 +53,11 @@ export default function HomePage() {
 
       {/* Réduction de la marge haute (mt-6 au lieu de mt-8) */}
       <div className="mt-6 flex flex-wrap gap-3">
-        <a
-          href="#/inscription"
-          className="inline-flex items-center gap-2 rounded-full bg-brand-green-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-brand-green-700 hover:shadow-md"
-        >
+        <a href="#/inscription" className="btn btn-primary">
           Rejoindre le club
           <ArrowRight className="h-4 w-4" />
         </a>
-        <a
-          href="#/activites"
-          className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 shadow-sm transition-all duration-200 hover:bg-gray-50 hover:border-gray-400"
-        >
+        <a href="#/activites" className="btn btn-outline">
           Voir les cours
         </a>
       </div>
