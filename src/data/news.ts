@@ -15,45 +15,36 @@ export const news: NewsItem[] = [
   {
     id: '1',
     title: 'Assemblée générale 2026',
-    date: '2026-09-12',
+    date: '2026-09-03',
     category: 'Info club',
     excerpt:
-      'Notre assemblée générale annuelle se tiendra le jeudi 4 septembre 2026 à 17h30 à l\'Ami-Club. Bilan de la saison, élection du bureau et projets à venir — tous les adhérents sont conviés.',
+      'Notre assemblée générale annuelle se tiendra le jeudi 3 septembre 2026 à 17h30 à l\'Ami-Club. Changement de nom de l\'association, bilan de la saison, élection du bureau et projets à venir — tous les adhérents sont conviés.',
     content:
-      'L\'assemblée générale d\'Activ\' Sport Rivesaltes se tiendra le samedi 12 septembre 2026 à 10h à l\'Ami-Club. Au programme : bilan moral et financier de la saison écoulée, élection du bureau pour la nouvelle saison, présentation des activités et du planning 2026-2027. Votre présence est importante pour la vie démocratique du club.',
+      'L\'assemblée générale d\'Activ\' Sport Rivesaltes se tiendra le jeudi 3 septembre 2026 à 17h30 à l\'Ami-Club. Au programme : Changement de nom de l\'association,bilan moral et financier de la saison écoulée, élection du bureau pour la nouvelle saison, présentation des activités et du planning 2026-2027. Votre présence est importante pour la vie démocratique du club.',
     image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
-  {
+  
+   {
     id: '2',
+    title: 'Forum des associations',
+    date: '2026-09-05',
+    category: 'Événement',
+    excerpt:
+      'Le forum des associations se tiendra le samedi 5 septembre aux Dômes, venez nous rencontrer et découvrir nos activités sportives et bien-être pour la saison 2026 – 2027.',
+    content:
+      'Comme chaque année, nous participons au forum des associations. Rendez-vous le samedi 5 septembre 2026 aux Dômes pour rencontrer nos animateurs et découvrir nos activités sportives et bien-être pour la saison 2026 – 2027. Inscriptions possibles sur place.',
+    image: '/images/Forum.png?auto=compress&cs=tinysrgb&w=600',
+  },
+  
+  {
+    id: '3',
     title: 'Galette des rois',
-    date: '2027-01-09',
+    date: '',
     category: 'Événement',
     excerpt:
       'Moment convivial autour de la galette des rois pour bien démarrer l\'année ensemble. Adhérents et accompagnants bienvenus !',
     content:
-      'Comme chaque année, nous célébrons l\'Épiphanie entre adhérents. Rendez-vous le 9 janvier 2027 à 16h à l\'Ami-Club pour partager une galette des rois, un café et un moment de convivialité. Pensez à vous inscrire auprès de la trésorière.',
-    image: 'https://images.pexels.com/photos/4109136/pexels-photo-4109136.jpeg?auto=compress&cs=tinysrgb&w=800',
-  },
-  {
-    id: '3',
-    title: 'Sortie marche nordique au Mont Canigou',
-    date: '2026-10-25',
-    category: 'Sortie',
-    excerpt:
-      'Grande sortie marche nordique au pied du Canigou. Parcours adapté, pique-nique partagé et grand air garantis.',
-    content:
-      'Le groupe marche nordique organise une grande sortie le dimanche 25 octobre 2026 au pied du Canigou. Départ à 8h du parking de Vernet-les-Bains. Parcours de 8 km adapté à tous les niveaux, avec pique-nique partagé en milieu de parcours. Inscriptions auprès de Marie-Thérèse.',
-    image: 'https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=800',
-  },
-  {
-    id: '4',
-    title: 'Stage découverte Pilates',
-    date: '2026-11-15',
-    category: 'Événement',
-    excerpt:
-      'Un stage de découverte Pilates ouvert à tous, adhérents et non-adhérents. Venez tester en douceur cette pratique accessible.',
-    content:
-      'Samedi 15 novembre 2026, de 14h à 16h, Nathalie anime un stage découverte Pilates à l\'ancienne mairie. Au programme : principes de la méthode, travail postural et respiration. Ouvert à tous, adhérents et non-adhérents. Tarif : 10 €. Inscriptions à l\'accueil du club.',
-    image: 'https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'Comme chaque année, nous célébrons l\'Épiphanie entre adhérents. Rendez-vous en janvier 2027 à l\'Ami-Club pour partager une galette des rois, un café et un moment de convivialité. Pensez à vous inscrire.',
+    image: '/images/Galette.jpg?auto=compress&cs=tinysrgb&w=600',
   },
 ];

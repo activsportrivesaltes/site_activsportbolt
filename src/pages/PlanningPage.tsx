@@ -47,23 +47,21 @@ export default function PlanningPage() {
       <PageHero
         eyebrow="Planning"
         title="Horaires des cours 2026 – 2027"
-        subtitle="Retrouvez tous les créneaux par jour, lieu et niveau. Les séances ont lieu à l'Ami-Club, à l'ancienne mairie ou au gymnase de Rivesaltes."
+        subtitle="Retrouvez tous les créneaux par jour, lieu et niveau. Les séances ont lieu à l'Ami-Club, à l'ancienne mairie ou en extérieur."
       />
 
       <section className="container-page py-10 sm:py-12">
         {/* Légende des lieux */}
         <div className="mb-8 flex flex-wrap gap-4 text-sm">
-          <span className="inline-flex items-center gap-2 rounded-full bg-brand-purple-50 px-4 py-2 text-brand-purple-700">
-            <MapPin className="h-4 w-4" /> Ami-Club
-          </span>
+         
           <span className="inline-flex items-center gap-2 rounded-full bg-brand-green-50 px-4 py-2 text-brand-green-700">
             <MapPin className="h-4 w-4" /> Ancienne mairie
           </span>
           <span className="inline-flex items-center gap-2 rounded-full bg-brand-yellow-50 px-4 py-2 text-brand-yellow-800">
-            <MapPin className="h-4 w-4" /> Gymnase
-          </span>
-          <span className="inline-flex items-center gap-2 rounded-full bg-gray-100 px-4 py-2 text-gray-600">
             <MapPin className="h-4 w-4" /> Extérieur
+          </span>
+           <span className="inline-flex items-center gap-2 rounded-full bg-brand-purple-50 px-4 py-2 text-brand-purple-700">
+            <MapPin className="h-4 w-4" /> Ami-Club
           </span>
         </div>
 

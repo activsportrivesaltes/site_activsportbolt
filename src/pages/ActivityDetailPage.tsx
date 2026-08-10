@@ -40,16 +40,20 @@ export default function ActivityDetailPage({ slug }: { slug: string }) {
               subtitle={activity.shortDescription}
             >
               <div className="mt-6 flex flex-wrap gap-3">
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-sm font-medium text-brand-purple-800 shadow-soft">
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-green-500 bg-green-100 px-4 py-2 text-sm font-medium text-green-800 shadow-soft">
                   <Target className="h-4 w-4" /> {activity.level}
                 </span>
                 
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-sm font-medium text-brand-purple-800 shadow-soft">
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-yellow-500 bg-yellow-100 px-4 py-2 text-sm font-medium text-yellow-800 shadow-soft">
                   <Users className="h-4 w-4" /> {activity.audience}
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-purple-500 bg-purple-100 px-4 py-2 text-sm font-medium text-purple-800 shadow-soft">
+                  <Users className="h-4 w-4" /> {activity.animateur}
                 </span>
               </div>
             </PageHero>
           </div>
+         
 
           {/* Colonne Droite : L'image dédiée */}
           <div className="w-full lg:w-1/2 max-w-md shrink-0 lg:pr-6 pb-8 lg:pb-0">

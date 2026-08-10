@@ -11,7 +11,8 @@ export type Activity = {
   icon: string; // nom lucide-react
   color: 'yellow' | 'green' | 'purple';
   img ?: string;
-};
+  animateur?: 'Axelle'| 'Céline' | 'Christine' | 'Lyana' |'Marie' |'Monique'| 'Roland'| 'Lyana ou Roland';
+}
 
 export const activities: Activity[] = [
   {
@@ -24,8 +25,8 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'CircleDot',
     color: 'purple',
-    img: "/images/Fitball.jpg"
-    
+    img: "/images/Fitball.jpg",
+    animateur : 'Roland'
   },
   {
     slug: 'fitness',
@@ -37,7 +38,8 @@ export const activities: Activity[] = [
     audience: 'Adulte',
     icon: 'Dumbbell',
     color: 'yellow',
-    img:"/images/Fitness.jpg"
+    img:"/images/Fitness.jpg",
+    animateur : 'Axelle'
   },
   {
     slug: 'gym-adaptee',
@@ -49,7 +51,21 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'HeartPulse',
     color: 'green',
-    img:"/images/Gym_adaptee.jpg"
+    img:"/images/Gym_adaptee.jpg",
+    animateur : 'Christine'
+  },
+  {
+    slug: 'gym-adultes',
+    name: 'Gym adultes',
+    shortDescription: 'Assouplissement et allongement musculaire.',
+    description:
+      'La gym adultes regroupe des activités physiques variées adaptées aux personnes majeures, du débutant au sportif confirmé. Elle vise à entretenir la santé, améliorer la condition physique et favoriser le bien-être général.',
+    level: 'Tous niveaux',
+    audience: 'Adulte',
+    icon: 'Move',
+    color: 'green',
+      img:"/images/Gym_Adultes.png",
+    animateur : 'Christine'
   },
   {
     slug: 'gym-douce',
@@ -61,7 +77,8 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'Feather',
     color: 'green',
-     },
+    animateur : 'Christine'
+   },
   {
     slug: 'gym-plein-air',
     name: 'Gym plein air',
@@ -72,6 +89,7 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'Trees',
     color: 'green',
+    animateur : 'Christine'
       },
   {
     slug: 'gym-tonic',
@@ -83,7 +101,8 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'Zap',
     color: 'yellow',
-    img:"/images/Gym_tonic.jpg"
+    img:"/images/Gym_tonic.jpg",
+    animateur : 'Marie'
   },
   {
     slug: 'marche-nordique',
@@ -95,6 +114,7 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'Footprints',
     color: 'green',
+    animateur : 'Céline',
     img:"/images/Marche_nordique.jpg"
   },
   {
@@ -107,7 +127,8 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'Activity',
     color: 'purple',
-    img:"/images/Pilates.jpg"
+    img:"/images/Pilates.jpg",
+    animateur : 'Lyana ou Roland'
   },
   
   {
@@ -120,7 +141,9 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'Waves',
     color: 'green',
+    animateur : 'Lyana',
   },
+  
   {
     slug: 'yin-yoga-fascia',
     name: 'Yin yoga / Fascia',
@@ -131,7 +154,8 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'Moon',
     color: 'purple',
-    img:"/images/Yin_yoga_fascia.jpg"
+    img:"/images/Yin_yoga_fascia.jpg",
+    animateur : 'Roland',
   },
   {
     slug: 'yoga',
@@ -143,19 +167,10 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'Flower2',
     color: 'purple',
-    img:"/images/Yoga.jpg"
+    img:"/images/Yoga.jpg",
+    animateur : 'Monique',
   },
-  {
-    slug: 'stretching',
-    name: 'Stretching',
-    shortDescription: 'Assouplissement et allongement musculaire.',
-    description:
-      'Cours d\'étirements ciblés pour gagner en souplesse, relâcher les tensions musculaires et prévenir les courbatures. Accessible à tous, il complète idéalement les pratiques dynamiques.',
-    level: 'Tous niveaux',
-    audience: 'Adulte & Senior',
-    icon: 'Move',
-    color: 'green',
-  },
+  
   {
     slug: 'zumba',
     name: 'Zumba',
@@ -166,6 +181,7 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'Music',
     color: 'yellow',
-    img:"/images/Zumba.jpg"
+    img:"/images/Zumba.jpg",
+    animateur : 'Axelle'
   },
 ];

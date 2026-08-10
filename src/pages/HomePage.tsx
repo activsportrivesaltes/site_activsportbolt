@@ -5,7 +5,7 @@ import { news } from '@/data/news';
 const stats = [
   { value: '240', label: 'Adhérents', icon: Users },
   { value: '45+', label: "Années d'existence", icon: Calendar },
-  { value: '14', label: 'Activités proposées', icon: Sparkles },
+  { value: '13', label: 'Activités proposées', icon: Sparkles },
   { value: '100%', label: 'Sans compétition', icon: Heart },
 ];
 
@@ -21,73 +21,71 @@ export default function HomePage() {
 
   return (
     <div>
+      
       {/* Hero */}
       <section className="relative overflow-hidden bg-white">
-        {/* Dégradé décoratif vert-violet très léger en arrière-plan */}
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-green-50/60 via-white to-brand-purple-50/50 pointer-events-none" />
-        <div className="absolute right-0 top-0 h-[480px] w-[480px] rounded-full bg-brand-purple-100/40 blur-3xl -translate-y-1/4 translate-x-1/4 pointer-events-none" />
-        <div className="absolute left-0 bottom-0 h-64 w-64 rounded-full bg-brand-green-100/50 blur-3xl translate-y-1/3 -translate-x-1/4 pointer-events-none" />
+  {/* Dégradé décoratif vert-violet très léger en arrière-plan */}
+  <div className="absolute inset-0 bg-gradient-to-br from-brand-green-50/60 via-white to-brand-purple-50/50 pointer-events-none" />
+  <div className="absolute right-0 top-0 h-[360px] w-[360px] rounded-full bg-brand-purple-100/40 blur-3xl -translate-y-1/4 translate-x-1/4 pointer-events-none" />
+  <div className="absolute left-0 bottom-0 h-48 w-48 rounded-full bg-brand-green-100/50 blur-3xl translate-y-1/3 -translate-x-1/4 pointer-events-none" />
 
-        <div className="container-page relative grid items-center gap-12 py-20 lg:grid-cols-2 lg:py-28">
-          {/* Colonne texte */}
-          <div className="animate-fade-up">
-            {/* Badge localisation */}
-            <span className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-1.5 text-sm font-medium text-gray-600 shadow-sm">
-              <MapPin className="h-3.5 w-3.5 text-brand-green-600" />
-              Rivesaltes · 66600
-            </span>
+  {/* Réduction du padding vertical : py-10 lg:py-16 au lieu de py-20 lg:py-28 */}
+  <div className="container-page relative grid items-center gap-8 py-10 lg:grid-cols-2 lg:py-16">
+    {/* Colonne texte */}
+    <div className="animate-fade-up">
+      {/* Réduction de la marge haute (mt-2 au lieu de mt-5) */}
+      <h1 className="mt-2 font-heading text-3xl font-bold leading-[1.15] tracking-tight text-gray-900 sm:text-4xl lg:text-[2.8rem]">
+        <span className="text-brand-green-500">Bougez, respirez,</span><br />
+        <span className="text-brand-yellow-400">&emsp;&nbsp;vivez sport</span><br />
+        <span className="text-purple-800">&emsp;&emsp;&emsp;à votre rythme.</span>
+      </h1>
 
-            <h1 className= "mt-5 font-heading text-4xl font-bold leading-[1.15] tracking-tight text-gray-900 sm:text-5xl lg:text-[3.4rem]">
-              <span className="text-brand-green-500">Bougez, respirez,</span><br />
-              <span className="text-brand-yellow-500">&emsp; vivez sport</span><br />
-              <span className="text-purple-900">&emsp;&emsp;à votre rythme.</span>
-              
-            </h1>
+      {/* Réduction de la marge haute (mt-4 au lieu de mt-6) */}
+      <p className="mt-4 max-w-lg text-base leading-relaxed text-gray-500 sm:text-lg">
+        Anciennement Gymnastique Volontaire Rivesaltes,{' '}<br />
+        <strong className="font-semibold text-gray-700">
+          <span className="text-green-600">Activ'</span>{' '}
+          <span className="text-yellow-500">Sport</span>{' '}
+          <span className="text-purple-600">Rivesaltes</span>
+        </strong> réunit adultes et seniors autour d'activités douces et dynamiques, dans une ambiance chaleureuse,{' '}
+        sans esprit de compétition.
+      </p>
 
-            <p className="mt-6 max-w-lg text-base leading-relaxed text-gray-500 sm:text-lg">
-  Anciennement Gymnastique Volontaire Rivesaltes,{' '}<br />
-  <strong className="font-semibold text-gray-700">
-    <span className="text-green-600">Activ'</span>{' '}
-    <span className="text-yellow-500">Sport</span>{' '}
-    <span className="text-purple-600">Rivesaltes</span>
-  </strong> réunit adultes et seniors autour d'activités douces et dynamiques, dans une ambiance chaleureuse,{' '}
-  <strong className="font-semibold text-gray-700">sans esprit de compétition</strong>.
-</p>
+      {/* Réduction de la marge haute (mt-6 au lieu de mt-8) */}
+      <div className="mt-6 flex flex-wrap gap-3">
+        <a
+          href="#/inscription"
+          className="inline-flex items-center gap-2 rounded-full bg-brand-green-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-brand-green-700 hover:shadow-md"
+        >
+          Rejoindre le club
+          <ArrowRight className="h-4 w-4" />
+        </a>
+        <a
+          href="#/activites"
+          className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 shadow-sm transition-all duration-200 hover:bg-gray-50 hover:border-gray-400"
+        >
+          Voir les cours
+        </a>
+      </div>
+    </div>
 
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="#/inscription"
-                className="inline-flex items-center gap-2 rounded-full bg-brand-green-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-brand-green-700 hover:shadow-md"
-              >
-                Rejoindre le club
-                <ArrowRight className="h-4 w-4" />
-              </a>
-              <a
-                href="#/activites"
-                className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-700 shadow-sm transition-all duration-200 hover:bg-gray-50 hover:border-gray-400"
-              >
-                Voir les cours
-              </a>
-            </div>
-          </div>
-
-          {/* Colonne logo */}
-          <div className="flex justify-center animate-fade-in lg:justify-end">
-            <div className="relative">
-              {/* Halo décoratif derrière la carte */}
-              <div className="absolute inset-0 scale-110 rounded-3xl bg-gradient-to-br from-brand-green-100/70 via-brand-purple-100/40 to-brand-yellow-100/50 blur-2xl" />
-              {/* Carte blanche avec le logo */}
-              <div className="relative rounded-3xl bg-white p-8 shadow-[0_8px_48px_rgba(0,0,0,0.10)] ring-1 ring-gray-100 sm:p-10">
-                <img
-                  src="/images/Logo_ActivSportRiv.jpg"
-                  alt="Logo Activ' Sport Rivesaltes"
-                  className="h-56 w-56 object-contain sm:h-64 sm:w-64"
-                />
-              </div>
-            </div>
-          </div>
+    {/* Colonne logo */}
+    <div className="flex justify-center animate-fade-in lg:justify-end">
+      <div className="relative">
+        {/* Halo décoratif adapté */}
+        <div className="absolute inset-0 scale-110 rounded-3xl bg-gradient-to-br from-brand-green-100/70 via-brand-purple-100/40 to-brand-yellow-100/50 blur-2xl" />
+        {/* Légère réduction du padding et de la taille de l'image (h-48 w-48 sm:h-56 sm:w-56) */}
+        <div className="relative rounded-3xl bg-white p-6 shadow-[0_8px_48px_rgba(0,0,0,0.10)] ring-1 ring-gray-100 sm:p-8">
+          <img
+            src="/images/Logo_ActivSportRiv.jpg"
+            alt="Logo Activ' Sport Rivesaltes"
+            className="h-48 w-48 object-contain sm:h-56 sm:w-56"
+          />
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Présentation courte */}
       <section className="container-page py-10 sm:py-12">
@@ -96,8 +94,12 @@ export default function HomePage() {
             <span className="eyebrow">Bienvenue au club</span>
             <h2 className="section-title mt-2">Un club pour bouger en toute sérénité</h2>
             <p className="mt-5 text-lg leading-relaxed text-gray-600">
-              Anciennement Gymnastique Volontaire Rivesaltes, le club est devenu Activ' Sport Rivesaltes
-              pour affirmer sa vocation : proposer à toutes et à tous, quel que soit l'âge ou le niveau,
+              Anciennement Gymnastique Volontaire Rivesaltes, le club est devenu{" "}
+  <span className="text-green-600 font-semibold">Activ'</span>{" "}
+  <span className="text-yellow-500 font-semibold">Sport</span>{" "}
+  <span className="text-purple-600 font-semibold">Rivesaltes </span>
+
+               pour affirmer sa vocation : proposer à toutes et à tous, quel que soit l'âge ou le niveau,
               une activité physique de bien-être. Nos animateurs diplômés encadrent chaque cours avec
               attention, dans le respect des capacités de chacun.
             </p>
@@ -121,28 +123,18 @@ export default function HomePage() {
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            <img
-              src="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&cs=tinysrgb&w=500"
-              alt="Séance de Pilates au sol"
-              className="h-48 w-full rounded-2xl object-cover shadow-soft sm:h-64"
-            />
-            <img
-              src="/images/Photo_Rivesaltes.jpg"
-              alt="Sortie marche nordique en nature"
-              className="mt-8 h-48 w-full rounded-2xl object-cover shadow-soft sm:h-64"
-            />
-            <img
-              src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=500"
-              alt="Cours de yoga collectif"
-              className="h-48 w-full rounded-2xl object-cover shadow-soft sm:h-64"
-            />
-            <img
-              src="https://images.pexels.com/photos/4046316/pexels-photo-4046316.jpeg?auto=compress&cs=tinysrgb&w=500"
-              alt="Cours de Zumba en groupe"
-              className="mt-8 h-48 w-full rounded-2xl object-cover shadow-soft sm:h-64"
-            />
-          </div>
+         <div className="grid grid-cols-2 gap-4 items-center">
+  <img
+    src="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&cs=tinysrgb&w=500"
+    alt="Séance de Pilates au sol"
+    className="h-48 w-full rounded-2xl object-cover shadow-soft sm:h-64"
+  />
+  <img
+    src="/images/Photo_Rivesaltes.jpg"
+    alt="Sortie marche nordique en nature"
+    className="h-48 w-full rounded-2xl object-cover shadow-soft sm:h-64"
+  />
+</div>
         </div>
       </section>
 
@@ -155,7 +147,7 @@ export default function HomePage() {
                 <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-brand-purple-100 text-brand-purple-700">
                   <s.icon className="h-6 w-6" />
                 </div>
-                <p className="mt-4 font-heading text-3xl font-bold text-brand-purple-900">{s.value}</p>
+                <p className="mt-4 font-heading text-3xl font-bold text-brand-purple-800">{s.value}</p>
                 <p className="mt-1 text-sm text-gray-600">{s.label}</p>
               </div>
             ))}

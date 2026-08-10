@@ -27,44 +27,10 @@ export const gallery: GalleryItem[] = [
   },
   {
     id: '3',
-    src: 'Gym_tonic.jpg',
+    src: 'images/Gym_tonic.jpg',
     alt: 'S\u00e9ance de Pilates au sol sur tapis',
     caption: 'Pilates',
     category: 'Cours',
   },
-  {
-    id: '4',
-    src: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Cours de yoga collectif en salle',
-    caption: 'Yoga',
-    category: 'Cours',
-  },
-  {
-    id: '5',
-    src: 'https://images.pexels.com/photos/4761352/pexels-photo-4761352.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Moment convivial entre adh\u00e9rents lors d\u2019un \u00e9v\u00e9nement du club',
-    caption: 'Galette des rois',
-    category: 'Événements',
-  },
-  {
-    id: '6',
-    src: 'https://images.pexels.com/photos/4498482/pexels-photo-4498482.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'S\u00e9ance de renforcement musculaire avec halt\u00e8res l\u00e9gers',
-    caption: 'Renforcement musculaire',
-    category: 'Cours',
-  },
-  {
-    id: '7',
-    src: 'https://images.pexels.com/photos/4046316/pexels-photo-4046316.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Cours de Zumba dans une ambiance festive',
-    caption: 'Zumba',
-    category: 'Cours',
-  },
-  {
-    id: '8',
-    src: 'https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Gymnastique en plein air dans un parc',
-    caption: 'Gym plein air',
-    category: 'Sorties',
-  },
+  
 ];

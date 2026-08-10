@@ -19,20 +19,21 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-brand-yellow-400 via-brand-green-500 to-brand-purple-400 text-white">
-              <span className="font-heading text-lg font-bold">A</span>
-            </div>
-            <div className="leading-tight">
-              <span className="block font-heading text-base font-bold">
-                <span className="text-brand-green-300">Activ'</span>{' '}
-                <span className="text-brand-yellow-300">Sport</span>{' '}
-                <span className="text-brand-purple-200">Rivesaltes</span>
-              </span>
-              <span className="block text-xs uppercase tracking-wider text-brand-purple-200">
-                Sport bien-être pour tous
-              </span>
-            </div>
-          </div>
+  {/* <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-brand-yellow-400 via-brand-green-500 to-brand-purple-400 text-white">
+    <span className="font-heading text-lg font-bold">A</span>
+  </div> */}
+  <img src="images/Logo_ActivSportRiv.jpg" alt="Logo Activ'Sport Rivesaltes" className="h-11 w-auto" /> {/* Ajustez la hauteur (h-11) et la largeur (w-auto) selon vos besoins */}
+  <div className="leading-tight">
+    <span className="block font-heading text-base font-bold">
+      <span className="text-brand-green-300">Activ'</span>{' '}
+      <span className="text-brand-yellow-300">Sport</span>{' '}
+      <span className="text-brand-purple-200">Rivesaltes</span>
+    </span>
+    <span className="block text-xs uppercase tracking-wider text-brand-purple-200">
+      Sport bien-être pour tous
+    </span>
+  </div>
+</div>
           <p className="mt-4 text-sm leading-relaxed text-brand-purple-100">
             Club associatif proposant des activités physiques accessibles à tous, adultes et seniors,
             dans une ambiance conviviale et sans esprit de compétition.

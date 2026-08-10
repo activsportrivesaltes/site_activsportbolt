@@ -8,7 +8,7 @@ export default function PricingPage() {
       <PageHero
         eyebrow="Tarifs"
         title="Des formules adaptées à votre pratique"
-        subtitle="Choisissez la formule qui vous convient. Réduction de 10 € pour le 2e membre du foyer ainsi que pour les étudiants, valable du 14/09/2026 au 31/12/26 ."
+        subtitle="Choisissez la formule qui vous convient. Réduction de 10 € pour le 2e membre du foyer ainsi que pour les étudiants, valable du 14 septembre 2026 au 31 décembre 2026 ."
       />
 
       <section className="container-page py-10 sm:py-12">
@@ -50,7 +50,7 @@ export default function PricingPage() {
               </ul>
               <a
                 href="#/inscription"
-                className={`btn mt-8 ${plan.variant === 'green' ? 'bg-brand-green-700 text-white hover:bg-brand-green-800' : plan.variant === 'purple' ? 'bg-brand-purple-700 text-white hover:bg-brand-purple-800' : plan.variant === 'yellow' ? 'bg-brand-yellow-600 text-white hover:bg-brand-yellow-700' : 'btn-primary'}`}
+                className={`btn mt-8 ${plan.variant === 'green' ? 'bg-brand-green-700 text-white hover:bg-brand-green-800' : plan.variant === 'purple' ? 'bg-brand-purple-700 text-white hover:bg-brand-purple-800' : plan.variant === 'yellow' ? 'bg-brand-yellow-400 text-white hover:bg-brand-yellow-700' : 'btn-primary'}`}
               >
                 Choisir cette formule
               </a>

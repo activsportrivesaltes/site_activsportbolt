@@ -45,15 +45,13 @@ export default function Header({ currentPath }: { currentPath: string }) {
             className="h-12 w-12 rounded-xl object-cover shadow-soft"
           />
           <div className="leading-tight">
-            <span className="block font-heading text-base font-bold text-brand-purple-900 sm:text-lg">
-              Activ' Sport
-            </span>
-            <span className="block text-xs font-semibold uppercase tracking-wider text-brand-green-600">
-              Rivesaltes
-            </span>
-          </div>
+  <span className="block font-heading text-base sm:text-lg">
+    <span className="text-brand-green-600">Activ' </span>
+    <span className="text-yellow-400">Sport</span>
+    <span className="text-brand-purple-700"> Rivesaltes</span>
+  </span>
+</div>
         </a>
-
         {/* Nav desktop */}
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Navigation principale">
           {navItems.map((item) => {

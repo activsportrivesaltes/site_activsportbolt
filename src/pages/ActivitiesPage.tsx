@@ -39,6 +39,8 @@ export default function ActivitiesPage() {
                   <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600">
                     {a.audience}
                   </span>
+                 
+                  
                 </div>
                 <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-brand-purple-700 group-hover:text-brand-purple-900">
                   En savoir plus

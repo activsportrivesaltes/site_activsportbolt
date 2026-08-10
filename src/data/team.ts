@@ -5,8 +5,8 @@ export type TeamMember = {
   id: string;
   name: string;
   role: string;
-  certification: string;
-  activities: string[];
+  certification?: string[];
+  activities?: string[];
   image: string;
 };
 
@@ -15,57 +15,57 @@ export const team: TeamMember[] = [
     id: '1',
     name: 'Gisèle',
     role: 'Présidente',
-    certification: ' ',
-    activities: [' '],
-    image: '/images/Gisele.jpg??auto=compress&cs=tinysrgb&w=600',
+    certification: [],
+    activities: [],
+    image: '/images/Gisele.jpg',
   },
   {
     id: '2',
     name: 'Marie-Thérèse',
     role: 'Vice-présidente',
-    certification: ' ',
-    activities: [' '],
-    image: '/images/Marie_Therese.jpg??auto=compress&cs=tinysrgb&w=600',
+    certification: [],
+    activities: [],
+    image: '/images/Marie_Therese.jpg',
   },
 {
     id: '3',
     name: 'Christian',
     role: 'Trésorier',
-    certification: ' ',
-    activities: [' '],
+    certification: [],
+    activities: [],
     image: 'https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
 
     {
     id: '11',
-    name: 'Bureau',
-    role: '',
-    certification: ' ',
+    name: 'Le bureau',
+    role: 'Le bureau du club',
+    certification: [],
     activities: [],
-    image: '/images/Roland.jpg',
+    image: 'https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
 
   {
     id: '4',
     name: 'Axelle',
     role: 'Animatrice',
-    certification: '',
+    certification: [],
     activities: ['Fitness', 'Zumba'],
-    image: '/images/Axelle.jpg??auto=compress&cs=tinysrgb&w=600',
+    image: '/images/Axelle.jpg',
   },
   {
     id: '5',
     name: 'Céline',
     role: 'Animatrice',
-    certification: ' ',
+    certification: [],
     activities: ['Marche nordique'],
-    image: '/images/Celine.jpg??auto=compress&cs=tinysrgb&w=600',
+    image: '/images/Celine.jpg',
   },
   {
     id: '6',
     name: 'Christine',
     role: 'Animatrice',
-    certification: ' ',
+    certification: [],
     activities: ['Gym adultes', 'Gym adaptée', 'Gym douce', 'Gym plein air'],
     image: '/images/Christine.jpg',
   },
@@ -73,7 +73,7 @@ export const team: TeamMember[] = [
     id: '7',
     name: 'Lyana',
     role: 'Animatrice',
-    certification: ' ',
+    certification: [],
     activities: ['Pilates'],
     image: '/images/Lyana.jpg',
   },
@@ -81,7 +81,7 @@ export const team: TeamMember[] = [
     id: '8',
     name: 'Marie',
     role: 'Animatrice',
-    certification: ' ',
+    certification: [],
     activities: ['Gym tonic'],
     image: '/images/Marie.jpg',
   },
@@ -89,7 +89,7 @@ export const team: TeamMember[] = [
     id: '9',
     name: 'Monique',
     role: 'Animatrice',
-    certification: ' ',
+    certification: [],
     activities: ['Yoga'],
     image: '/images/Monique.jpg',
   },
@@ -97,7 +97,7 @@ export const team: TeamMember[] = [
     id: '10',
     name: 'Roland',
     role: 'Animateur',
-    certification: ' ',
+    certification: [],
     activities: ['Fitball', 'Pilates'],
     image: '/images/Roland.jpg',
   },

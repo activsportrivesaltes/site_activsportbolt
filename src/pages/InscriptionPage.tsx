@@ -38,9 +38,21 @@ export default function InscriptionPage() {
     <div>
       <PageHero
         eyebrow="Inscription"
-        title="Rejoignez Activ' Sport Rivesaltes"
-        subtitle="Remplissez le formulaire ci-dessous pour manifester votre intérêt. Nous reviendrons vers vous rapidement."
+        title={
+      <>
+        Rejoignez <span className="text-green-600">Activ'</span>{" "}
+        <span className="text-yellow-500">Sport</span>{" "}
+        <span className="text-purple-800">Rivesaltes</span>
+      </>
+    }
+        subtitle={
+    <>
+      Pour vous inscrire, plus rapidement, apportez la fiche d'inscription et le formulaire de santé que vous pouvez télécharger ci-dessous.<br />Prévoyez 2 enveloppes timbrées à votre adresse si vous n'avez pas d'adresse mail.<br />
+      Une question ? N'hésitez pas à nous envoyer un message, nous reviendrons vers vous rapidement.
+    </>
+  }
       />
+       
 
       <section className="container-page py-10 sm:py-12">
         <div className="grid gap-10 lg:grid-cols-3">
@@ -93,13 +105,13 @@ export default function InscriptionPage() {
 
                 <div className="mt-5">
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                    Message (facultatif)
+                    Message
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     rows={4}
-                    placeholder="Une question, une précision sur votre niveau…"
+                    placeholder="Une question, une précision…"
                     className="mt-1.5 w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-800 focus:border-brand-purple-400 focus:outline-none focus:ring-2 focus:ring-brand-purple-100"
                   />
                 </div>
