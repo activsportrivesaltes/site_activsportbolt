@@ -88,7 +88,7 @@ export default function HomePage() {
             <span className="eyebrow">Bienvenue au club</span>
             <h2 className="section-title mt-2">Un club pour bouger en toute sérénité</h2>
             <p className="mt-5 text-lg leading-relaxed text-gray-600">
-              Anciennement Gymnastique Volontaire Rivesaltes, le club est devenu{" "}
+              Le club est devenu{" "}
   <span className="text-green-600 font-semibold">Activ'</span>{" "}
   <span className="text-yellow-500 font-semibold">Sport</span>{" "}
   <span className="text-purple-600 font-semibold">Rivesaltes </span>
