@@ -81,7 +81,7 @@ export default function Header({ currentPath }: { currentPath: string }) {
                   : 'text-gray-700 hover:bg-gray-100 hover:text-brand-purple-700'
               }`}
             >
-              Inscription
+              Inscriptions
             </a>
           </nav>
         </div>
@@ -121,7 +121,7 @@ export default function Header({ currentPath }: { currentPath: string }) {
                   : 'text-gray-700 hover:bg-brand-purple-50 hover:text-brand-purple-700'
               }`}
             >
-              Inscription
+              Inscriptions
             </a>
           </nav>
         </div>
