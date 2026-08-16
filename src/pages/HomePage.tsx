@@ -48,7 +48,7 @@ export default function HomePage() {
           <span className="text-yellow-500">Sport</span>{' '}
           <span className="text-purple-600">Rivesaltes</span>
         </strong> réunit adultes et seniors autour d'activités douces et dynamiques, dans une ambiance chaleureuse,{' '}
-        sans aucun esprit de compétition.
+          esprit de compétition.
       </p>
 
       {/* Réduction de la marge haute (mt-6 au lieu de mt-8) */}
