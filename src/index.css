@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Tokens de couleur du club — ajustables ici en un seul endroit */
+  --color-yellow: #D3F527;
+  --color-green: #3FA34D;
+  --color-purple: #7B4FBF;
+  --color-bg: #FFFFFF;
+  --color-surface: #F7F8FA;
+  --color-text: #1F2330;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-container px-4 sm:px-6 lg:px-8;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+  }
+  .btn-primary {
+    @apply bg-brand-purple-600 text-white shadow-soft hover:bg-brand-purple-700 hover:shadow-card focus-visible:ring-brand-purple-500;
+  }
+  .btn-secondary {
+    @apply bg-brand-yellow-400 text-brand-purple-900 shadow-soft hover:bg-brand-yellow-300 focus-visible:ring-brand-yellow-400;
+  }
+  .btn-outline {
+    @apply border-2 border-brand-purple-300 text-brand-purple-700 hover:bg-brand-purple-50 focus-visible:ring-brand-purple-400;
+  }
+  .card {
+    @apply rounded-2xl bg-white shadow-soft ring-1 ring-black/5 transition-all duration-300;
+  }
+  .section-title {
+    @apply font-heading text-3xl font-bold tracking-tight text-brand-purple-900 sm:text-4xl;
+  }
+  .eyebrow {
+    @apply inline-block text-sm font-semibold uppercase tracking-wider text-brand-green-600;
+  }
+}
+
+/* Scrollbar discret */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd0db;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #aab1c0;
+}
