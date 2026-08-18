@@ -48,34 +48,16 @@ export default function HomePage() {
           <span className="text-yellow-500">Sport</span>{' '}
           <span className="text-purple-600">Rivesaltes</span>
         </strong> réunit adultes et seniors autour d'activités douces et dynamiques, dans une ambiance chaleureuse,{' '}
-<<<<<<< HEAD
-         sans esprit de compétition.
-=======
         sans esprit de compétition.
->>>>>>> fd8cfc8dceff2ab9805bc2029c115d96cd0b55f2
       </p>
 
       {/* Réduction de la marge haute (mt-6 au lieu de mt-8) */}
       <div className="mt-6 flex flex-wrap gap-3">
-<<<<<<< HEAD
         <a href="#/inscription" className="btn btn-primary">
           Rejoindre le club
           <ArrowRight className="h-4 w-4" />
         </a>
         <a href="#/activites" className="btn btn-outline">
-=======
-        <a
-          href="#/inscription"
-          className="inline-flex items-center gap-2 rounded-full bg-brand-green-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-brand-green-700 hover:shadow-md"
-        >
-          Rejoindre le club
-          <ArrowRight className="h-4 w-4" />
-        </a>
-        <a
-          href="#/activites"
-          className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 shadow-sm transition-all duration-200 hover:bg-gray-50 hover:border-gray-400"
-        >
->>>>>>> fd8cfc8dceff2ab9805bc2029c115d96cd0b55f2
           Voir les cours
         </a>
       </div>
@@ -106,11 +88,7 @@ export default function HomePage() {
             <span className="eyebrow">Bienvenue au club</span>
             <h2 className="section-title mt-2">Un club pour bouger en toute sérénité</h2>
             <p className="mt-5 text-lg leading-relaxed text-gray-600">
-<<<<<<< HEAD
               Le club est devenu{" "}
-=======
-              Anciennement Gymnastique Volontaire Rivesaltes, le club est devenu{" "}
->>>>>>> fd8cfc8dceff2ab9805bc2029c115d96cd0b55f2
   <span className="text-green-600 font-semibold">Activ'</span>{" "}
   <span className="text-yellow-500 font-semibold">Sport</span>{" "}
   <span className="text-purple-600 font-semibold">Rivesaltes </span>

@@ -44,7 +44,6 @@ export default function Header({ currentPath }: { currentPath: string }) {
             alt="Logo Activ' Sport Rivesaltes"
             className="h-12 w-12 rounded-xl object-cover shadow-soft"
           />
-<<<<<<< HEAD
           <div className="leading-none">
             <span className="block font-heading text-base sm:text-lg">
               <span className="text-brand-green-600">Activ' </span>
@@ -92,46 +91,6 @@ export default function Header({ currentPath }: { currentPath: string }) {
           <button
             type="button"
             className="inline-flex items-center justify-center rounded-lg p-2 text-brand-purple-800"
-=======
-          <div className="leading-tight">
-  <span className="block font-heading text-base sm:text-lg">
-    <span className="text-brand-green-600">Activ' </span>
-    <span className="text-yellow-400">Sport</span>
-    <span className="text-brand-purple-700"> Rivesaltes</span>
-  </span>
-</div>
-        </a>
-        {/* Nav desktop */}
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Navigation principale">
-          {navItems.map((item) => {
-            const isActive = currentPath === item.href.slice(1) || (item.href === '#/' && currentPath === '/');
-            return (
-              <a
-                key={item.href}
-                href={item.href}
-                className={`rounded-full px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive
-                    ? 'bg-brand-purple-100 text-brand-purple-800'
-                    : 'text-gray-700 hover:bg-gray-100 hover:text-brand-purple-700'
-                }`}
-              >
-                {item.label}
-              </a>
-            );
-          })}
-        </nav>
-
-        <div className="flex items-center gap-2">
-          {/* CTA Rejoindre */}
-          <a href="#/inscription" className="btn btn-primary hidden sm:inline-flex">
-            Rejoindre le club
-          </a>
-
-          {/* Burger */}
-          <button
-            type="button"
-            className="inline-flex items-center justify-center rounded-lg p-2 text-brand-purple-800 lg:hidden"
->>>>>>> fd8cfc8dceff2ab9805bc2029c115d96cd0b55f2
             aria-label="Ouvrir le menu"
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
@@ -154,7 +113,6 @@ export default function Header({ currentPath }: { currentPath: string }) {
                 {item.label}
               </a>
             ))}
-<<<<<<< HEAD
             <a
               href="#/inscription"
               className={`rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
@@ -164,10 +122,6 @@ export default function Header({ currentPath }: { currentPath: string }) {
               }`}
             >
               Inscriptions
-=======
-            <a href="#/inscription" className="btn btn-primary mt-2">
-              Rejoindre le club
->>>>>>> fd8cfc8dceff2ab9805bc2029c115d96cd0b55f2
             </a>
           </nav>
         </div>

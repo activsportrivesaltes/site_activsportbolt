@@ -51,13 +51,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-800">Adresse</p>
-<<<<<<< HEAD
                   <p className="text-sm text-gray-600">Mairie de Rivesaltes (66600), France</p>
                   <p className="text-sm text-gray-500">Cours à l'Ami-Club, à l'ancienne mairie et en extérieur.</p>
-=======
-                  <p className="text-sm text-gray-600">Rivesaltes (66600), France</p>
-                  <p className="text-sm text-gray-500">Cours à l'Ami-Club, à l'ancienne mairie et au gymnase</p>
->>>>>>> fd8cfc8dceff2ab9805bc2029c115d96cd0b55f2
                 </div>
               </li>
               <li className="flex items-start gap-4">

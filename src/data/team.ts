@@ -33,11 +33,7 @@ export const team: TeamMember[] = [
     role: 'Trésorier',
     certification: [],
     activities: [],
-<<<<<<< HEAD
     image: '/images/Christian.jpg',
-=======
-    image: 'https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&w=600',
->>>>>>> fd8cfc8dceff2ab9805bc2029c115d96cd0b55f2
   },
 
     {
