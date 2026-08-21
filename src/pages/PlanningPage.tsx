@@ -112,8 +112,8 @@ export default function PlanningPage() {
             const ls = styleForLocation(slot.location);
             return (
               /* Chaque cours est entouré d'une bordure avec un fond léger et des coins arrondis */
-              <div 
-                key={i} 
+              <div
+                key={i}
                 className="flex items-start gap-3 rounded-xl border border-gray-200 bg-gray-50/50 p-3.5 shadow-sm transition-shadow hover:shadow-md"
               >
                 <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${ls.badge}`}>
