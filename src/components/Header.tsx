@@ -12,7 +12,9 @@ const navItems: NavItem[] = [
   { label: 'Équipe', href: '#/equipe' },
   { label: 'Actualités', href: '#/actualites' },
   { label: 'Galerie', href: '#/galerie' },
+  { label: 'Inscriptions', href: '#/inscription' },
   { label: 'Contact', href: '#/contact' },
+  { label: 'Partenaires', href: '#/partenaires' },
 ];
 
 export default function Header({ currentPath }: { currentPath: string }) {
@@ -54,6 +56,7 @@ export default function Header({ currentPath }: { currentPath: string }) {
             </span>
           </div>
         </a>
+
         {/* Nav desktop */}
         <div className="hidden items-center gap-1 lg:flex">
           <nav className="flex items-center gap-1" aria-label="Navigation principale">
@@ -73,16 +76,6 @@ export default function Header({ currentPath }: { currentPath: string }) {
                 </a>
               );
             })}
-            <a
-              href="#/inscription"
-              className={`rounded-full px-3 py-2 text-sm font-medium transition-colors ${
-                currentPath === '/inscription'
-                  ? 'bg-brand-purple-100 text-brand-purple-800'
-                  : 'text-gray-700 hover:bg-gray-100 hover:text-brand-purple-700'
-              }`}
-            >
-              Inscriptions
-            </a>
           </nav>
         </div>
 
@@ -104,25 +97,22 @@ export default function Header({ currentPath }: { currentPath: string }) {
       {open && (
         <div className="border-t border-gray-100 bg-white lg:hidden">
           <nav className="container-page flex flex-col gap-1 py-4" aria-label="Navigation mobile">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="rounded-lg px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-brand-purple-50 hover:text-brand-purple-700"
-              >
-                {item.label}
-              </a>
-            ))}
-            <a
-              href="#/inscription"
-              className={`rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
-                currentPath === '/inscription'
-                  ? 'bg-brand-purple-100 text-brand-purple-800'
-                  : 'text-gray-700 hover:bg-brand-purple-50 hover:text-brand-purple-700'
-              }`}
-            >
-              Inscriptions
-            </a>
+            {navItems.map((item) => {
+              const isActive = currentPath === item.href.slice(1) || (item.href === '#/' && currentPath === '/');
+              return (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className={`rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
+                    isActive
+                      ? 'bg-brand-purple-100 text-brand-purple-800'
+                      : 'text-gray-700 hover:bg-brand-purple-50 hover:text-brand-purple-700'
+                  }`}
+                >
+                  {item.label}
+                </a>
+              );
+            })}
           </nav>
         </div>
       )}

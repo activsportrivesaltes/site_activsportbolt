@@ -20,7 +20,7 @@ export const gallery: GalleryItem[] = [
   },
   {
     id: '2',
-    src: '/images/Pilates2.jpg',
+    src: '/images/Pilates2F.jpg',
     alt: 'Pilates',
     caption: 'Pilates avec Roland',
     category: 'Cours',

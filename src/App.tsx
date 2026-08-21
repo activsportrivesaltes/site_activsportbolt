@@ -12,6 +12,7 @@ import InscriptionPage from '@/pages/InscriptionPage';
 import NewsPage from '@/pages/NewsPage';
 import GalleryPage from '@/pages/GalleryPage';
 import ContactPage from '@/pages/ContactPage';
+import PartenairesPage from '@/pages/PartenairesPage';
 import LegalPage from '@/pages/LegalPage';
 
 export default function App() {
@@ -41,6 +42,8 @@ export default function App() {
     page = <GalleryPage />;
   } else if (path === '/contact') {
     page = <ContactPage />;
+   } else if (path === '/partenaires') {
+    page = <PartenairesPage />;  
   } else if (path === '/mentions-legales') {
     page = <LegalPage />;
   } else {

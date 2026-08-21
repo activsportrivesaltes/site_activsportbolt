@@ -25,7 +25,7 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'CircleDot',
     color: 'purple',
-    img: "/images/Fitball.jpg",
+    img: "/images/FitballF.jpg",
     animateur : 'Roland'
   },
   {
@@ -38,7 +38,7 @@ export const activities: Activity[] = [
     audience: 'Adulte',
     icon: 'Dumbbell',
     color: 'yellow',
-    img:"/images/Fitness.jpg",
+    img:"/images/FitnessF.jpg",
     animateur : 'Axelle'
   },
   {
@@ -51,7 +51,7 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'HeartPulse',
     color: 'green',
-    img:"/images/Gym_adaptee.jpg",
+    img:"/images/GymAdapteeF.jpg",
     animateur : 'Christine'
   },
   {
@@ -64,7 +64,7 @@ export const activities: Activity[] = [
     audience: 'Adulte',
     icon: 'Move',
     color: 'green',
-      img:"/images/Gym_Adultes.png",
+    img:"/images/GymAdultesF.jpg", 
     animateur : 'Christine'
   },
   {
@@ -77,6 +77,7 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'Feather',
     color: 'green',
+    img:"/images/GymDouceF.jpg", 
     animateur : 'Christine'
    },
   {
@@ -127,7 +128,7 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'Activity',
     color: 'purple',
-    img:"/images/Pilates.jpg",
+    img:"/images/PilatesF.jpg",
     animateur : 'Lyana ou Roland'
   },
   
@@ -181,7 +182,7 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'Music',
     color: 'yellow',
-    img:"/images/Zumba.jpg",
+    img:"/images/ZumbaF.jpg",
     animateur : 'Axelle'
   },
 ];
