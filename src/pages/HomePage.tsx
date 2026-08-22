@@ -3,8 +3,8 @@ import { activities } from '@/data/activities';
 import { news } from '@/data/news';
 
 const stats = [
-  { value: '240', label: 'Adhérents', icon: Users },
-  { value: '45+', label: "Années d'existence", icon: Calendar },
+  { value: '+ 230', label: 'Adhérents', icon: Users },
+  { value: '50+', label: "Années d'existence", icon: Calendar },
   { value: '13', label: 'Activités proposées', icon: Sparkles },
   { value: '100%', label: 'Sans compétition', icon: Heart },
 ];
@@ -118,7 +118,7 @@ export default function HomePage() {
             </a>
           </div>
          <div className="grid grid-cols-2 gap-4 items-center">
-  <img
+  {/* <img 
     src="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&cs=tinysrgb&w=500"
     alt="Séance de Pilates au sol"
     className="h-48 w-full rounded-2xl object-cover shadow-soft sm:h-64"
@@ -127,7 +127,7 @@ export default function HomePage() {
     src="/images/Photo_Rivesaltes.jpg"
     alt="Sortie marche nordique en nature"
     className="h-48 w-full rounded-2xl object-cover shadow-soft sm:h-64"
-  />
+  />*/}
 </div>
         </div>
       </section>

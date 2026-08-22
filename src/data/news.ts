@@ -42,7 +42,7 @@ export const news: NewsItem[] = [
     date: '2025-01-23',
     category: 'Événement',
     excerpt:
-      'Moment convivial autour de la galette des rois pour bien démarrer l\'année ensemble. Adhérents et accompagnants bienvenus !',
+      'Moment convivial autour de la galette des rois pour bien démarrer l\'année ensemble.',
     content:
       'Comme chaque année, nous célébrons l\'Épiphanie entre adhérents. Rendez-vous en janvier 2027 à l\'Ami-Club pour partager une galette des rois, un rafraîchissement et un moment de convivialité. Pensez à vous inscrire.',
     image: '/images/Galette2024.jpg?auto=compress&cs=tinysrgb&w=600',
@@ -56,7 +56,18 @@ export const news: NewsItem[] = [
     excerpt:
       'Regroupement de tous les clubs EPGV 66.',
     content:
-      'Regroupement de tous les clubs EPGV 66 pour une journée oxygène, marche active autour des 2 lacs à Villeneuve de la Raho, animations, repas et remise des récompenses.',
+      'Regroupement de tous les clubs EPGV 66 pour une journée oxygène, marche active autour des 2 lacs à Villeneuve de la Raho, présentation de nouvelles activités par petits ateliers l\'après-midi, animations, repas et remise des récompenses.',
     image: '/images/FestimarcheF.jpg?auto=compress&cs=tinysrgb&w=600',
   },
+  {
+    id: '5',
+    title: 'Les 50 ans du club',
+    date: '2024-06-20',
+    category: 'Événement',
+    excerpt:
+      'Anniversaire de la création du club.',
+    content:
+      '50 ans de sport, de vitalité et de passion partagée ! Depuis 1974, notre club fait bouger toutes les générations dans un esprit familial et bienveillant.',
+    image: '/images/50ansGateau.jpg',
+    },
 ];

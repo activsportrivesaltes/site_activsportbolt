@@ -20,11 +20,11 @@ const colorClasses: Record<string, { bg: string; text: string }> = {
 
 function ActivSportRivesaltesWordmark() {
   return (
-    <>
+    <div className="text-center">
       <span className="text-brand-green-500">Activ'</span>{' '}
       <span className="text-brand-yellow-400">Sport</span>{' '}
       <span className="text-brand-purple-700">Rivesaltes</span>
-    </>
+    </div>
   );
 }
 
@@ -61,9 +61,8 @@ export default function ClubPage() {
                 associatif ouvert à toutes et à tous, centré sur le bien-être et la vitalité.
               </p>
               <p>
-                Aujourd'hui, ce sont plus de 240 adhérents qui se retrouvent chaque semaine pour
-                pratiquer l'une des 13 activités proposées, encadrées par des animateurs diplômés
-                et bénévoles.
+                Aujourd'hui, ce sont plus de 230 adhérents qui se retrouvent chaque semaine pour
+                pratiquer l'une des 13 activités proposées, encadrées par des animateurs diplômés.
               </p>
             </div>
           </div>

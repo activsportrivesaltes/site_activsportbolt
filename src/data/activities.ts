@@ -150,7 +150,7 @@ export const activities: Activity[] = [
     name: 'Yin yoga / Fascia',
     shortDescription: 'Étirements profonds et libération des fascias.',
     description:
-      'Pratique lente où les postures sont maintenues plusieurs minutes pour relâcher les fascias et les tensions profondes. Le yin yoga apaise le système nerveux et améliore la souplesé.',
+      'Pratique lente où les postures sont maintenues plusieurs minutes pour relâcher les fascias et les tensions profondes. Le yin yoga apaise le système nerveux et améliore la souplesse.',
     level: 'Tous niveaux',
     audience: 'Adulte & Senior',
     icon: 'Moon',
@@ -163,7 +163,7 @@ export const activities: Activity[] = [
     name: 'Yoga',
     shortDescription: 'Postures, respiration et relaxation.',
     description:
-      'Séances de yoga postural, pranayama (respiration) et relaxation. Le yoga cultive l\'équilibre, la souplesé et la sérénité, pour un mieux-être global au quotidien.',
+      'Séances de yoga postural, pranayama (respiration) et relaxation. Le yoga cultive l\'équilibre, la souplesse et la sérénité, pour un mieux-être global au quotidien.',
     level: 'Tous niveaux',
     audience: 'Adulte & Senior',
     icon: 'Flower2',
@@ -171,18 +171,18 @@ export const activities: Activity[] = [
     img:"/images/Yoga.jpg",
     animateur : 'Monique',
   },
-  
   {
     slug: 'zumba',
     name: 'Zumba',
     shortDescription: 'Danse fitness festive sur rythmes latins.',
     description:
-      'Cours de danse fitness sur des rythmes latins et internationaux. La Zumba fait travailler le cardio tout en s\'amusant — la transpiration sans s\'en rendre compte, dans une ambiance festive.',
+      'Cours de danse fitness  sur des rythmes latins et internationaux. La zumba fait travailler le cardio tout en s\'amusant - la transpiration sans s\'en rendre compte, dans une ambiance festive.',
     level: 'Tous niveaux',
     audience: 'Adulte & Senior',
     icon: 'Music',
     color: 'yellow',
     img:"/images/ZumbaF.jpg",
     animateur : 'Axelle'
-  },
+  }
+
 ];

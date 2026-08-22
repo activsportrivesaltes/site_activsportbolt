@@ -71,8 +71,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-800">Email</p>
-                  <a href="mailto:activsportrivesaltes@etik.com" className="text-sm text-brand-purple-700 hover:underline">
-                    activsportrivesaltes@etik.com
+                  <a href="mailto:contact@activsportrivesaltes.fr" className="text-sm text-brand-purple-700 hover:underline">
+                    contact@activsportrivesaltes.fr
                   </a>
                 </div>
               </li>

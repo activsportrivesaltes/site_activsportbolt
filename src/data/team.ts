@@ -4,7 +4,7 @@
 export type TeamMember = {
   id: string;
   name: string;
-  role: string;
+  role?: string;
   certification?: string[];
   activities?: string[];
   image: string;
@@ -38,8 +38,44 @@ export const team: TeamMember[] = [
 
     {
     id: '11',
-    name: 'Le bureau',
-    role: 'Le bureau du club',
+    name: 'Anne',
+    role: '',
+    certification: [],
+    activities: [],
+    image: '/images/Anne.jpg',
+  },
+
+    {
+    id: '12',
+    name: 'Carole',
+    role: '',
+    certification: [],
+    activities: [],
+    image: '/images/Carole.jpg',
+  },
+
+    {
+    id: '13',
+    name: 'Catherine',
+    role: '',
+    certification: [],
+    activities: [],
+    image: '/images/Catherine.jpg',
+  },
+
+    {
+    id: '14',
+    name: 'Mariejo',
+    role: '',
+    certification: [],
+    activities: [],
+    image: '/images/Marijo.jpg',
+  },
+
+    {
+    id: '15',
+    name: 'Annie',
+    role: '',
     certification: [],
     activities: [],
     image: 'https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&w=600',
