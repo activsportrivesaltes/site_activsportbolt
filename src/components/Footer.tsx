@@ -76,8 +76,8 @@ export default function Footer() {
             </li>
             <li className="flex items-start gap-2">
               <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand-green-300" />
-              <a href="mailto:activsportrivesaltes@etik.com" className="hover:text-white">
-                activsportrivesaltes@etik.com
+              <a href="mailto:contact@activsportrivesaltes.fr" className="hover:text-white">
+                contact@activsportrivesaltes.fr
               </a>
             </li>
           </ul>

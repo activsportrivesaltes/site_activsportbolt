@@ -47,7 +47,7 @@ export default function InscriptionPage() {
     }
         subtitle={
     <>
-      Pour vous inscrire, plus rapidement, apportez la fiche d'inscription et le formulaire de santé que vous pouvez télécharger ci-dessous.<br />Prévoyez 2 enveloppes timbrées à votre adresse si vous n'avez pas d'adresse mail.<br />
+      Pour vous inscrire, plus rapidement, apportez la fiche d'inscription et le formulaire de santé que vous pouvez télécharger ci-dessous.<br />Prévoyez 3 enveloppes timbrées à votre adresse si vous n'avez pas d'adresse mail.<br />
       Une question ? N'hésitez pas à nous envoyer un message, nous reviendrons vers vous rapidement.
     </>
   }
