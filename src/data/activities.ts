@@ -90,6 +90,7 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'Trees',
     color: 'green',
+    img:"/images/GymPleinAir.jpg",
     animateur : 'Christine'
       },
   {
@@ -142,6 +143,7 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'Waves',
     color: 'green',
+    img:"/images/Strechmouv.jpg",
     animateur : 'Lyana',
   },
   
