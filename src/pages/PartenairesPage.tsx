@@ -42,7 +42,15 @@ const partners: Partner[] = [
     address: '94200 Ivry-sur-Seine',
     website: 'https://www.agencedusport.fr/',
   },
-  
+  {
+    id: 'Fédération Française du Sport Vitalité',
+    name: 'Fédération Française du Sport Vitalité',
+    category: 'Institutionnel',
+    description: 'Son rôle est de développer la pratique du sport pour tous et d\'améliorer la haute performance des athlètes.',
+    logo: "/images/Logo_Fede2.jpg",
+    address: '93100 Montreuil',
+    website: 'https://ffepgv.fr/',
+  },
 ];
 
 const categories: PartnerCategory[] = ['Tous', 'Institutionnel', 'Sponsor', 'Commerce local'];

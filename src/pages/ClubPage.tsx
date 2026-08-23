@@ -46,18 +46,23 @@ export default function ClubPage() {
           <div>
             <span className="eyebrow">Notre histoire</span>
             <h2 className="section-title mt-2 text-brand-purple-800">
-              De GV Rivesaltes<br />&ensp;&ensp;&ensp;à <ActivSportRivesaltesWordmark />
+              De GV Rivesaltes à&ensp;&ensp;&ensp;<ActivSportRivesaltesWordmark />
             </h2>
             <div className="mt-6 space-y-4 leading-relaxed text-gray-600">
               <p>
                 Le club trouve ses origines dans la <strong>Gymnastique Volontaire de Rivesaltes</strong>,
-                créée il y a plus de quarante ans par un groupe de passionnés souhaitant offrir aux
+                créée il y a plus de cinquante ans par un groupe de passionnés souhaitant offrir aux
                 Rivesaltais une activité physique accessible et conviviale.
               </p>
               <p>
                 Au fil des saisons, l'offre s'est enrichie — marche nordique, pilates, yoga, zumba —
-                pour répondre aux attentes d'un public de plus en plus large. En devenant
-                <strong> <ActivSportRivesaltesWordmark /></strong>, le club a affirmé son identité : un club
+                pour répondre aux attentes d'un public de plus en plus large.
+                </p>
+                <p>
+                  En devenant{" "}
+                <span className="text-green-600 font-semibold">Activ'</span>{" "}
+                <span className="text-yellow-500 font-semibold">Sport</span>{" "}
+                <span className="text-purple-600 font-semibold">Rivesaltes</span>, le club a affirmé son identité : un club
                 associatif ouvert à toutes et à tous, centré sur le bien-être et la vitalité.
               </p>
               <p>

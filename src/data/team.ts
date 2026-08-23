@@ -39,43 +39,34 @@ export const team: TeamMember[] = [
     {
     id: '11',
     name: 'Anne',
-    role: '',
+    role: 'Secrétaire',
     certification: [],
     activities: [],
     image: '/images/Anne.jpg',
   },
 
-    {
+       {
     id: '12',
-    name: 'Carole',
-    role: '',
-    certification: [],
-    activities: [],
-    image: '/images/Carole.jpg',
-  },
-
-    {
-    id: '13',
     name: 'Catherine',
-    role: '',
+    role: 'Trésorière adjointe',
     certification: [],
     activities: [],
     image: '/images/Catherine.jpg',
   },
 
     {
-    id: '14',
+    id: '13',
     name: 'Mariejo',
-    role: '',
+    role: 'Secrétaire adjointe',
     certification: [],
     activities: [],
     image: '/images/Marijo.jpg',
   },
 
     {
-    id: '15',
+    id: '14',
     name: 'Annie',
-    role: '',
+    role: 'Référente informatique',
     certification: [],
     activities: [],
     image: 'https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&w=600',

@@ -8,7 +8,7 @@ export default function TeamPage() {
       <PageHero
         eyebrow="L'équipe"
         title="Nos dirigeants et nos animateurs diplômés"
-        subtitle="Des passionnés au service de votre bien-être. Tous nos animateurs sont diplômés et bénévoles, engagés pour vous offrir des cours de qualité dans une ambiance conviviale."
+        subtitle="Des passionnés au service de votre bien-être. Tous nos animateurs sont diplômés, engagés pour vous offrir des cours de qualité dans une ambiance conviviale."
       />
 
       <section className="container-page py-10 sm:py-12">
