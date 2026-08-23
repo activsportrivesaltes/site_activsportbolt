@@ -176,9 +176,9 @@ export const activities: Activity[] = [
   {
     slug: 'zumba',
     name: 'Zumba',
-    shortDescription: 'Danse fitness festive sur rythmes latins.',
+    shortDescription: 'Danse fitness festive sur rythmes latinos.',
     description:
-      'Cours de danse fitness  sur des rythmes latins et internationaux. La zumba fait travailler le cardio tout en s\'amusant - la transpiration sans s\'en rendre compte, dans une ambiance festive.',
+      'Cours de danse fitness  sur des rythmes latinos et internationaux. La zumba fait travailler le cardio tout en s\'amusant - la transpiration sans s\'en rendre compte, dans une ambiance festive.',
     level: 'Tous niveaux',
     audience: 'Adulte & Senior',
     icon: 'Music',
