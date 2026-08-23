@@ -62,7 +62,7 @@ export default function ClubPage() {
                   En devenant{" "}
                 <span className="text-green-600 font-semibold">Activ'</span>{" "}
                 <span className="text-yellow-500 font-semibold">Sport</span>{" "}
-                <span className="text-purple-600 font-semibold">Rivesaltes</span>, le club a affirmé son identité : un club
+                <span className="text-purple-600 font-semibold">Rivesaltes</span>, le club a réaffirmé son identité : un club
                 associatif ouvert à toutes et à tous, centré sur le bien-être et la vitalité.
               </p>
               <p>
