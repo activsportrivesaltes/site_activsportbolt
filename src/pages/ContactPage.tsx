@@ -102,15 +102,14 @@ export default function ContactPage() {
 
             {/* Carte (Google Maps embed placeholder) */}
             <div className="mt-8 overflow-hidden rounded-2xl shadow-soft ring-1 ring-black/5">
-              <iframe
-                title="Carte de Rivesaltes"
-                src="https://www.google.com/maps?q=Rivesaltes%2066600&output=embed"
-                width="100%"
-                height="320"
-                loading="lazy"
-                style={{ border: 0 }}
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+              <img
+  src="images/Plan.jpg"
+  alt="Plan de Rivesaltes"
+  width="100%"
+  height="320"
+  loading="lazy"
+  style={{ border: 0, objectFit: 'cover' }}
+/>
             </div>
           </div>
 
