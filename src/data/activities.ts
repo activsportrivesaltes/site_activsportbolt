@@ -165,7 +165,7 @@ export const activities: Activity[] = [
     name: 'Yoga',
     shortDescription: 'Postures, respiration et relaxation.',
     description:
-      'C \'est un yoga traditionnel qui allie postures, enchaînements posturaux et respiration. Il est adapté à chaque personne que ce soit au niveau des facilitations ou des intensifications. Il permet de développer la souplesse du corps, la musculature profonde, le contrôle du souffle, la concentration, la confiance et la maîtrise de soi. Sa pratique permet d\'éliminer les tensions physiques et l\'accumulation de stress, il est donc orienté vers une recherche de mieux-être. Chaque séance se termine par un temps de relaxation, de pranayama (respirations) et ou d\'assise méditative.',
+      'C \'est un yoga traditionnel qui allie postures, enchaînements posturaux et respiration. Il est adapté à chaque personne que ce soit au niveau des facilitations ou des intensifications. Il permet de développer la souplesse du corps, la musculature profonde, le contrôle du souffle, la concentration, la confiance et la maîtrise de soi. Sa pratique permet d\'éliminer les tensions physiques et l\'accumulation de stress, il est donc orienté vers une recherche de mieux-être. Chaque séance se termine par un temps de relaxation, de pranayama (respirations) et-ou d\'assise méditative.',
     level: 'Tous niveaux',
     audience: 'Adulte & Senior',
     icon: 'Flower2',
