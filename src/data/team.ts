@@ -69,7 +69,7 @@ export const team: TeamMember[] = [
     role: 'Référente informatique',
     certification: [],
     activities: [],
-    image: 'https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/images/Annie.jpg',
   },
 
   {
