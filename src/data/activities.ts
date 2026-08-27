@@ -20,7 +20,7 @@ export const activities: Activity[] = [
     name: 'Fitball',
     shortDescription: 'Renforcement et équilibre sur grand ballon.',
     description:
-      'Travail musculaire doux et ludique sur grand ballon (Swiss ball). Le fitball sollicite la sangle abdominale, l\'équilibre et la posture, tout en protégeant le dos. Idéal pour reprendre une activité en douceur.',
+      'Travail musculaire doux sur gros ballon (Swiss ball). Le ballon associé au pilates crée du déséquilibre dans le maintien des postures , il permet d\'engager des muscles posturaux profond nécessaire à ce maintien tout en protégeant le dos. De par son côté ludique il est idéal pour reprendre une activité en douceur..',
     level: 'Tous niveaux',
     audience: 'Adulte & Senior',
     icon: 'CircleDot',
