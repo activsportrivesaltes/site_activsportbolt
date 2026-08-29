@@ -13,7 +13,7 @@ export type GalleryItem = {
 export const gallery: GalleryItem[] = [
   {
     id: '1',
-    src: 'public/images/PilatesF.jpg',
+    src: '/images/PilatesF.jpg',
     alt: 'Cours de Pilates en salle à Activ\u2019 Sport Rivesaltes',
     caption: 'Pilates',
     category: 'Cours',
