@@ -13,7 +13,7 @@ export type GalleryItem = {
 export const gallery: GalleryItem[] = [
   {
     id: '1',
-    src: '/images/PilatesF.jpg',
+    src: 'public/images/PilatesF.jpg',
     alt: 'Cours de Pilates en salle à Activ\u2019 Sport Rivesaltes',
     caption: 'Pilates',
     category: 'Cours',
@@ -28,9 +28,50 @@ export const gallery: GalleryItem[] = [
   {
     id: '3',
     src: 'images/Gym_tonic.jpg',
-    alt: 'S\u00e9ance de Pilates au sol sur tapis',
-    caption: 'Pilates',
+    alt: 'Gym tonic',
+    caption: 'Gym Tonic',
     category: 'Cours',
   },
-  
+  {
+    id: '4',
+    src: 'images/CoursMarieF.jpg',
+    alt: 'Cours de Marie',
+    caption: 'Gym tonic avec Marie',
+    category: 'Cours',
+  },
+  {
+    id: '5',
+    src: 'images/CoursSeniorsF.jpg',
+    alt: 'Cours sénior',
+    caption: 'Cours sénior',
+    category: 'Cours',
+  },
+  {
+    id: '6',
+    src: 'images/Fitball3F.jpg',
+    alt: 'Fitball',
+    caption: 'Fitball',
+    category: 'Cours',
+  },
+  {
+    id: '7',
+    src: 'images/Fitball4F.jpg',
+    alt: 'Fitball',
+    caption: 'Fitball',
+    category: 'Cours',
+  },
+  {
+    id: '8',
+    src: 'images/GymF.jpg',
+    alt: 'Gym',
+    caption: 'Gym',
+    category: 'Cours',
+  },
+  {
+    id: '9',
+    src: 'images/Gym4F.jpg',
+    alt: 'Gym',
+    caption: 'Gym',
+    category: 'Cours',
+  },
 ];
