@@ -51,6 +51,24 @@ const partners: Partner[] = [
     address: '93100 Montreuil',
     website: 'https://ffepgv.fr/',
   },
+  {
+    id: 'CODEP-66',
+    name: 'CODEP 66 - Comité Départemental de la Fédération Française du Sport Vitalité',
+    category: 'Institutionnel',
+    description: 'Le CODEP 66 est l\'instance départementale de la Fédération Française du Sport Vitalité, qui coordonne et soutient les clubs et associations sportives dans les Pyrénées-Orientales.',
+    logo: "/images/LogoCodep66.jpg",
+    address: '66000 Perpignan',
+    website: 'https://www.sport-sante.fr/epgv-comite-departemental-pyrenees-orientales/accueil.html',
+  },
+  {
+    id: 'COREG-66',
+    name: 'COREG 66 - Comité Régional de la Fédération Française du Sport Vitalité',
+    category: 'Institutionnel',
+    description: 'Le COREG 66 est l\'instance régionale de la Fédération Française du Sport Vitalité, qui coordonne et soutient les clubs et associations sportives dans les Pyrénées-Orientales.',
+    logo: "/images/LogoCoreg66.jpg",
+    address: '66000 Perpignan',
+    website: 'https://formationepgv.com/',
+  },
 ];
 
 const categories: PartnerCategory[] = ['Tous', 'Institutionnel', 'Sponsor', 'Commerce local'];
