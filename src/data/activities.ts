@@ -152,7 +152,7 @@ export const activities: Activity[] = [
     name: 'Yin yoga / Fascia',
     shortDescription: 'Étirements profonds et libération des fascias.',
     description:
-      'Cette séance est la combinaison de 2 pratiques : le yin yoga : Pratique lente où les postures sont maintenues plusieurs minutes pour relâcher les fascias et les tensions profondes. Le yin yoga apaise le système nerveux , renforce ligaments et articulations et améliore la souplesse. La seconde pratique est une succession de mouvements lents au sol permettant une meilleure mobilité pour les fascias ...gage d\'une amélioration des tissus et d\'une détente profonde.',
+      'Cette séance est la combinaison de 2 pratiques. Pratique lente où les postures sont maintenues plusieurs minutes pour relâcher les fascias et les tensions profondes. Le yin yoga apaise le système nerveux , renforce ligaments et articulations et améliore la souplesse. La seconde pratique est une succession de mouvements lents au sol permettant une meilleure mobilité pour les fascias ...gage d\'une amélioration des tissus et d\'une détente profonde.',
     level: 'Tous niveaux',
     audience: 'Adulte & Senior',
     icon: 'Moon',
