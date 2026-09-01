@@ -1,22 +1,41 @@
 import { useState, type FormEvent } from 'react';
-import { Send, CheckCircle2, MapPin, Phone, Mail, Facebook, Globe } from 'lucide-react';
+import { Send, CheckCircle2, AlertTriangle, MapPin, Phone, Mail, Facebook, Globe } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 
-// Formulaire de contact — interface uniquement.
-// handleSubmit centralisé pour faciliter le futur branchement Supabase.
-async function handleSubmit(_data: Record<string, string>): Promise<void> {
-  // TODO: brancher à Supabase (table "messages") plus tard.
-  await new Promise((r) => setTimeout(r, 600));
+// Formulaire de contact — envoie les données à l'API /api/contact (serveur
+// Express + Nodemailer, voir server.js), qui notifie l'association et
+// confirme la réception à l'expéditeur.
+async function handleSubmit(data: Record<string, string>): Promise<void> {
+  const res = await fetch('/api/contact', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data),
+  });
+
+  let json: { ok?: boolean } | null = null;
+  try {
+    json = await res.json();
+  } catch {
+    // réponse non-JSON (ex: erreur serveur brute) — gérée via res.ok plus bas
+  }
+
+  if (!res.ok || !json?.ok) {
+    throw new Error("Une erreur est survenue lors de l'envoi de votre message.");
+  }
 }
 
-type Status = 'idle' | 'submitting' | 'success';
+type Status = 'idle' | 'submitting' | 'success' | 'error';
 
 export default function ContactPage() {
   const [status, setStatus] = useState<Status>('idle');
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const formData = new FormData(e.currentTarget);
+    // Capturé avant l'"await" : après une attente asynchrone, l'événement DOM
+    // est terminé et e.currentTarget redevient null (comportement standard
+    // du DOM, rien à voir avec React) — on garde donc la référence ici.
+    const form = e.currentTarget;
+    const formData = new FormData(form);
     const data: Record<string, string> = {};
     formData.forEach((value, key) => {
       data[key] = String(value);
@@ -25,9 +44,12 @@ export default function ContactPage() {
     try {
       await handleSubmit(data);
       setStatus('success');
-      e.currentTarget.reset();
-    } catch {
-      setStatus('idle');
+      form.reset();
+    } catch (err) {
+      // Logué pour le diagnostic (jamais affiché tel quel à l'utilisateur) :
+      // permet de distinguer une vraie panne réseau d'un souci de parsing, etc.
+      console.error('[contact] Échec de la soumission du formulaire :', err);
+      setStatus('error');
     }
   };
 
@@ -121,6 +143,7 @@ export default function ContactPage() {
                 <h2 className="mt-4 font-heading text-2xl font-bold text-brand-purple-900">Message envoyé !</h2>
                 <p className="mt-2 max-w-md text-gray-600">
                   Merci de nous avoir écrit. Un membre du bureau vous répondra dans les meilleurs délais.
+                  Vous allez recevoir un email de confirmation.
                 </p>
                 <button type="button" onClick={() => setStatus('idle')} className="btn btn-outline mt-6">
                   Envoyer un autre message
@@ -130,6 +153,16 @@ export default function ContactPage() {
               <form onSubmit={onSubmit} className="card p-6 sm:p-8">
                 <h2 className="font-heading text-2xl font-bold text-brand-purple-900">Écrivez-nous</h2>
                 <p className="mt-1 text-sm text-gray-500">Nous répondons à tous les messages.</p>
+
+                {status === 'error' && (
+                  <div className="mt-4 flex items-start gap-3 rounded-xl bg-red-50 p-4 text-sm text-red-700">
+                    <AlertTriangle className="h-5 w-5 shrink-0" />
+                    <p>
+                      Une erreur est survenue lors de l'envoi de votre message. Merci de réessayer,
+                      ou de nous appeler directement si le problème persiste.
+                    </p>
+                  </div>
+                )}
 
                 <div className="mt-6 grid gap-5 sm:grid-cols-2">
                   <Field label="Prénom" name="firstName" required />
@@ -157,6 +190,12 @@ export default function ContactPage() {
                     required
                     className="mt-1.5 w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-800 focus:border-brand-purple-400 focus:outline-none focus:ring-2 focus:ring-brand-purple-100"
                   />
+                </div>
+
+                {/* Honeypot anti-spam : champ invisible, doit rester vide (les bots le remplissent) */}
+                <div className="absolute left-[-9999px] top-auto h-px w-px overflow-hidden" aria-hidden="true">
+                  <label htmlFor="website">Site web</label>
+                  <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
                 </div>
 
                 <button type="submit" disabled={status === 'submitting'} className="btn btn-primary mt-6 w-full sm:w-auto">
