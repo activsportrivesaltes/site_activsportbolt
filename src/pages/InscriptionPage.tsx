@@ -26,15 +26,18 @@ async function handleSubmit(data: InscriptionPayload): Promise<void> {
     body: JSON.stringify(data),
   });
 
+  // Lu une seule fois en texte brut, puis parsé nous-mêmes : permet de logger
+  // le vrai corps de réponse même s'il n'est pas du JSON valide.
+  const rawBody = await res.text();
   let json: { ok?: boolean } | null = null;
   try {
-    json = await res.json();
+    json = JSON.parse(rawBody);
   } catch {
-    // réponse non-JSON (ex: erreur serveur brute) — gérée via res.ok plus bas
+    // réponse non-JSON — gérée via res.ok plus bas, rawBody reste disponible pour le log
   }
 
   if (!res.ok || !json?.ok) {
-    throw new Error("Une erreur est survenue lors de l'envoi de votre demande.");
+    throw new Error(`Échec de l'envoi — HTTP ${res.status} ${res.statusText} — réponse : ${rawBody.slice(0, 300)}`);
   }
 }
 
