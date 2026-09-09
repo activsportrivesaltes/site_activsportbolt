@@ -2,8 +2,8 @@ import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { Send, CheckCircle2, AlertTriangle, FileText, Download, ChevronDown, Check, X } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 import { activities } from '@/data/activities';
-import ficheInscriptionUrl from '@/assets/documents/Fiche_Inscription.pdf';
-import questionnaireSanteUrl from '@/assets/documents/Questionnaire_Sante.pdf';
+import Fiche_Inscriptionurl from '@/assets/documents/Fiche_Inscription.pdf';
+import Questionnaire_Santeurl from '@/assets/documents/Questionnaire_Sante.pdf';
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL ?? '';
 
@@ -198,7 +198,7 @@ export default function InscriptionPage() {
               </p>
               <div className="mt-4 space-y-3">
                 <a
-                  href={ficheInscriptionUrl}
+                  href={Fiche_Inscriptionurl}
                   download="Fiche_Inscription.pdf"
                   className="flex items-center gap-3 rounded-xl bg-brand-purple-50 p-4 text-sm font-medium text-brand-purple-800 transition-colors hover:bg-brand-purple-100"
                 >
@@ -207,7 +207,9 @@ export default function InscriptionPage() {
                   <Download className="ml-auto h-4 w-4" />
                 </a>
                 <a
-                  href={questionnaireSanteUrl}
+
+                
+                  href={Questionnaire_Santeurl}
                   download="Questionnaire_Sante.pdf"
                   className="flex items-center gap-3 rounded-xl bg-brand-green-50 p-4 text-sm font-medium text-brand-green-800 transition-colors hover:bg-brand-green-100"
                 >

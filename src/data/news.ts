@@ -18,10 +18,10 @@ export const news: NewsItem[] = [
     date: '2026-09-03',
     category: 'Info club',
     excerpt:
-      'Notre assemblée générale annuelle se tiendra le jeudi 3 septembre 2026 à 17h30 à l\'Ami-Club. Changement de nom de l\'association, bilan de la saison, élection du bureau et projets à venir — tous les adhérents sont conviés.',
+      'Notre assemblée générale annuelle s\'est tenue le jeudi 3 septembre 2026. L\'assemblée a validée le changement de nom de l\'association : Activ\' Sport Rivesaltes.',
     content:
       'L\'assemblée générale d\'Activ\' Sport Rivesaltes se tiendra le jeudi 3 septembre 2026 à 17h30 à l\'Ami-Club. Au programme : Changement de nom de l\'association,bilan moral et financier de la saison écoulée, élection du bureau pour la nouvelle saison, présentation des activités et du planning 2026-2027. Votre présence est importante pour la vie démocratique du club.',
-    image: '/images/AGF.jpg',
+    image: '/images/AG2026F.jpg',
   },
   
    {
