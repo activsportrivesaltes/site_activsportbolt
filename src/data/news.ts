@@ -30,10 +30,10 @@ export const news: NewsItem[] = [
     date: '2026-09-05',
     category: 'Événement',
     excerpt:
-      'Le forum des associations se tiendra le samedi 5 septembre aux Dômes, venez nous rencontrer et découvrir nos activités sportives et bien-être pour la saison 2026 – 2027.',
+      'Le forum des associations s\'est tenu le samedi 5 septembre aux Dômes.',
     content:
-      'Comme chaque année, nous participons au forum des associations. Rendez-vous le samedi 5 septembre 2026 aux Dômes pour rencontrer nos animateurs et découvrir nos activités sportives et bien-être pour la saison 2026 – 2027. Inscriptions possibles sur place.',
-    image: '/images/Forum.jpg?auto=compress&cs=tinysrgb&w=600',
+      'Comme chaque année, le forum des associations s\'est tenu aux Dômes. Vous avez été nombreux à venir nous rencontrer pour découvrir nos activités sportives et bien-être pour la saison 2026 – 2027.',
+    image: '/images/Forum2026.jpg?auto=compress&cs=tinysrgb&w=600',
   },
   
   {

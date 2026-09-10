@@ -40,46 +40,83 @@ export default function ClubPage() {
         />
       
 
-      {/* Histoire */}
-      <section className="container-page py-10 sm:py-12">
-        <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-          <div>
-            <span className="eyebrow">Notre histoire</span>
-            <h2 className="section-title mt-2 text-brand-purple-800">
-              De GV Rivesaltes à&ensp;&ensp;&ensp;<ActivSportRivesaltesWordmark />
-            </h2>
-            <div className="mt-6 space-y-4 leading-relaxed text-gray-600">
-              <p>
-                Le club trouve ses origines dans la <strong>Gymnastique Volontaire de Rivesaltes</strong>,
-                créée il y a plus de cinquante ans par un groupe de passionnés souhaitant offrir aux
-                Rivesaltais une activité physique accessible et conviviale.
-              </p>
-              <p>
-                Au fil des saisons, l'offre s'est enrichie — marche nordique, pilates, yoga, zumba —
-                pour répondre aux attentes d'un public de plus en plus large.
-                </p>
-                <p>
-                  En devenant{" "}
-                <span className="text-green-600 font-semibold">Activ'</span>{" "}
-                <span className="text-yellow-500 font-semibold">Sport</span>{" "}
-                <span className="text-purple-600 font-semibold">Rivesaltes</span>, le club a réaffirmé son identité : un club
-                associatif ouvert à toutes et à tous, centré sur le bien-être et la vitalité.
-              </p>
-              <p>
-                Aujourd'hui, ce sont plus de 230 adhérents qui se retrouvent chaque semaine pour
-                pratiquer l'une des 13 activités proposées, encadrées par des animateurs diplômés.
-              </p>
-            </div>
-          </div>
-          <div className="relative">
-            <img
-              src="/images/Fitball1.jpg"
-              alt="Cours de fitball au club Activ' Sport Rivesaltes"
-              className="aspect-[4/3] w-full rounded-3xl object-cover shadow-card"
-            />
-          </div>
-        </div>
-      </section>
+     {/* Histoire */}
+<section className="container-page py-10 sm:py-12">
+  <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+    <div>
+      <span className="eyebrow">Notre histoire</span>
+      <h2 className="section-title mt-2 text-brand-purple-800">
+        De GV Rivesaltes à&ensp;&ensp;&ensp;<ActivSportRivesaltesWordmark />
+      </h2>
+      <div className="mt-6 space-y-4 leading-relaxed text-gray-600">
+        <p>
+          Le club trouve ses origines dans la <strong>Gymnastique Volontaire de Rivesaltes</strong>,
+          créée il y a plus de cinquante ans par un groupe de passionnés souhaitant offrir aux
+          Rivesaltais une activité physique accessible et conviviale.
+        </p>
+        <p>
+          Au fil des saisons, l'offre s'est enrichie — marche nordique, pilates, yoga, zumba —
+          pour répondre aux attentes d'un public de plus en plus large.
+        </p>
+        <p>
+          En devenant{" "}
+          <span className="text-green-600 font-semibold">Activ'</span>{" "}
+          <span className="text-yellow-500 font-semibold">Sport</span>{" "}
+          <span className="text-purple-600 font-semibold">Rivesaltes</span>, le club a réaffirmé son identité : un club
+          associatif ouvert à toutes et à tous, centré sur le bien-être et la vitalité.
+        </p>
+        <p>
+          Aujourd'hui, ce me sont plus de 230 adhérents qui se retrouvent chaque semaine pour
+          pratiquer l'une des 13 activités proposées, encadrées par des animateurs diplômés.
+        </p>
+      </div>
+    </div>
+    
+    {/* Grille 2x2 des images */}
+    <div className="grid grid-cols-2 gap-4">
+      <figure className="flex flex-col items-center">
+    <img
+      src="/images/Fitball1.jpg"
+      alt="Cours de fitball au club Activ' Sport Rivesaltes"
+      className="aspect-[4/3] w-full rounded-2xl object-cover shadow-card"
+    />
+    <figcaption className="mt-2 text-center text-sm font-medium text-gray-700">
+      Cours de Fitball
+    </figcaption>
+  </figure>
+      <figure className="flex flex-col items-center">
+    <img
+      src="/images/AmiClub.jpg"
+      alt="La salle de l'Ami-Club"
+      className="aspect-[4/3] w-full rounded-2xl object-cover shadow-card"
+    />
+    <figcaption className="mt-2 text-center text-sm font-medium text-gray-700">
+      La salle Ami-Club
+    </figcaption>
+  </figure>
+  <figure className="flex flex-col items-center">
+      <img
+        src="/images/AncienneMairie.jpg"
+        alt="L'ancienne mairie de Rivesaltes, lieu de pratique des activités du club Activ' Sport Rivesaltes"
+        className="aspect-[4/3] w-full rounded-2xl object-cover shadow-card"
+      />
+      <figcaption className="mt-2 text-center text-sm font-medium text-gray-700">
+        L'ancienne mairie de Rivesaltes
+      </figcaption>
+    </figure>
+  <figure className="flex flex-col items-center">
+      <img
+        src="/images/GymAmiClub.jpg"
+        alt="Pilates"
+        className="aspect-[4/3] w-full rounded-2xl object-cover shadow-card"
+      />
+      <figcaption className="mt-2 text-center text-sm font-medium text-gray-700">
+        Cours de pilates
+      </figcaption>
+    </figure>
+    </div>
+  </div>
+</section>
 
       {/* Valeurs */}
       <section className="bg-brand-green-50 py-16 sm:py-20">
