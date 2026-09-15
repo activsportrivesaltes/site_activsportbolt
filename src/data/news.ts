@@ -8,6 +8,7 @@ export type NewsItem = {
   category: 'Événement' | 'Info club' | 'Sortie';
   excerpt: string;
   content: string;
+  text?: string;
   image: string;
 };
 
@@ -18,13 +19,13 @@ export const news: NewsItem[] = [
     date: '2026-09-03',
     category: 'Info club',
     excerpt:
-      'Notre assemblée générale annuelle s\'est tenue le jeudi 3 septembre 2026. L\'assemblée a validé le changement de nom de l\'association : Activ\' Sport Rivesaltes.',
+      'Notre assemblée générale annuelle s\'est tenue le jeudi 3 septembre 2026.',
     content:
       'L\'assemblée générale d\'Activ\' Sport Rivesaltes s\'est tenue le jeudi 3 septembre 2026. L\'assemblée a validé le changement de nom de l\'association : Activ\' Sport Rivesaltes.',
-    image: '/images/AG2026F.jpg',
+    image: '/images/AG2026.jpg',
   },
   
-   {
+  {
     id: '2',
     title: 'Forum des associations',
     date: '2026-09-05',
@@ -69,5 +70,5 @@ export const news: NewsItem[] = [
     content:
       '50 ans de sport, de vitalité et de passion partagée ! Depuis 1974, notre club fait bouger toutes les générations dans un esprit familial et bienveillant.',
     image: '/images/50ansGateau.jpg',
-    },
+  },
 ];
