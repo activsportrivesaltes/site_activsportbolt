@@ -98,7 +98,7 @@ export default function InscriptionPage() {
         subtitle={
     <>
       Pour vous inscrire, plus rapidement, apportez la fiche d'inscription et le formulaire de santé que vous pouvez télécharger ci-dessous.<br />Prévoyez 3 enveloppes timbrées à votre adresse si vous n'avez pas d'adresse mail.<br />
-      Une question ? N'hésitez pas à nous envoyer un message, nous reviendrons vers vous rapidement.<br />Les inscriptions  auront lieu les mercredi 9 et jeudi 10 septembre de 15h à 19h à l'Ami-Club.
+      Une question ? N'hésitez pas à nous envoyer un message, nous reviendrons vers vous rapidement.<br />Vous pouvez donner votre fiche d'inscription, le certificat médical ou l'attestation sur l'honneur du questionnaire de santé, accompagnés de votre règlement (le tout dans une enveloppe) à l'animateur au début du cours.
     </>
   }
 

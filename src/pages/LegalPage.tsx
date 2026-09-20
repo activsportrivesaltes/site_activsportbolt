@@ -23,7 +23,7 @@ export default function LegalPage() {
           <p className="mt-2">
             Adresse : Mairie de Rivesaltes, 1 Place de la République, 66600 Rivesaltes — France <br />
             Email : contact@activsportrivesaltes.fr<br />
-            Téléphone : Gisèle : 06 98 09 99 77 - Marie-Thérèse :06 98 09 99 77</p>
+            Téléphone : Gisèle : 06 98 09 99 77 - Marie-Thérèse : 06 01 98 63 88</p>
           <h2 className="mt-8 font-heading text-xl font-bold text-brand-purple-900">Numéros d'immatriculation</h2>
           <p className="mt-2">A compléter [numéro RNA (commençant par un W) et SIRET/SIREN si l'association emploie des salariés ou perçoit des subventions.]</p>
           <h2 className="mt-8 font-heading text-xl font-bold text-brand-purple-900">Directeur de la publication</h2>
