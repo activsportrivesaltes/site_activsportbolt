@@ -66,7 +66,6 @@ export default function ActivityDetailPage({ slug }: { slug: string }) {
 
         </div>
       </div>
-
       <section className="container-page py-10 sm:py-12">
         <a href="#/activites" className="inline-flex items-center gap-2 text-sm font-semibold text-brand-purple-700 hover:text-brand-purple-900">
           <ArrowLeft className="h-4 w-4" /> Toutes les activités

@@ -28,6 +28,7 @@ export const schedule: ScheduleSlot[] = [
 
   { day: 'Mercredi', time: '09h00 – 10h00', activity: 'Gym adultes', location: 'Ami-Club', level: 'Tous niveaux', animateur: 'Christine' },
   { day: 'Mercredi', time: '10h00 – 11h00', activity: 'Yoga', location: 'Ami-Club', level: 'Tous niveaux', animateur: 'Monique' },
+  { day: 'Mercredi', time: '17h00 – 18h00', activity: 'Yin yoga/Fascia', location: 'Ami-Club', level: 'Tous niveaux', animateur: 'Roland' },
   { day: 'Mercredi', time: '18h00 – 19h00', activity: 'Fitball', location: 'Ami-Club', level: 'Tous niveaux', animateur: 'Roland' },
   { day: 'Mercredi', time: '19h00 – 20h00', activity: 'Pilates', location: 'Ami-Club', level: 'Tous niveaux', animateur: 'Roland' },
 
