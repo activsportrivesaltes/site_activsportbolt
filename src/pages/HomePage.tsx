@@ -30,7 +30,7 @@ export default function HomePage() {
   <div className="absolute left-0 bottom-0 h-48 w-48 rounded-full bg-brand-green-100/50 blur-3xl translate-y-1/3 -translate-x-1/4 pointer-events-none" />
 
   {/* Réduction du padding vertical : py-10 lg:py-16 au lieu de py-20 lg:py-28 */}
-  <div className="container-page relative grid items-center gap-8 py-10 lg:grid-cols-2 lg:py-16">
+  <div className="container-page relative grid items-center gap-6 py-10 lg:grid-cols-[1.25fr_0.55fr_0.9fr] lg:py-16">
     {/* Colonne texte */}
     <div className="animate-fade-up">
       {/* Réduction de la marge haute (mt-2 au lieu de mt-5) */}
@@ -60,6 +60,15 @@ export default function HomePage() {
         <a href="#/activites" className="btn btn-outline">
           Voir les cours
         </a>
+      </div>
+    </div>
+
+    {/* Flash info */}
+    <div className="flex items-center justify-center lg:justify-center">
+      <div className="w-full rounded-2xl border border-brand-yellow-200 bg-brand-yellow-50 px-4 py-3 text-center shadow-sm">
+        <p className="text-[11px] font-bold uppercase tracking-[0.106m] text-brand-green-600">Flash info</p>
+        <p className="mt-1 text-sm font-semibold text-brand-purple-800">Le cours de Yin yoga/Fascias est complet le mardi.</p>
+        <p className="mt-1 text-sm font-semibold text-brand-purple-800">Nous avons créé un nouveau créneau le mercredi à 17h00, il reste quelques places !</p>
       </div>
     </div>
 

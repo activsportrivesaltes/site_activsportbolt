@@ -30,9 +30,9 @@ export default function NewsPage() {
               {new Date(selected.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}
             </span>
           </div>
-          <div className="mt-6 max-w-3xl text-lg leading-relaxed text-gray-600">
-            {selected.content}
-          </div>
+<div className="whitespace-pre-line">
+  {selected.content}
+</div>
         </section>
       </div>
     );
