@@ -65,8 +65,8 @@ export default function HomePage() {
 
     {/* Flash info */}
     <div className="flex items-center justify-center lg:justify-center">
-      <div className="w-full rounded-2xl border border-brand-yellow-200 bg-brand-yellow-50 px-4 py-3 text-center shadow-sm">
-        <p className="text-[11px] font-bold uppercase tracking-[0.106m] text-brand-green-600">Flash info</p>
+      <div className="w-full rounded-2xl border border-brand-yellow-100 bg-brand-yellow-50 px-4 py-3 text-center shadow-sm">
+        <p className="text-[11px] font-bold uppercase tracking-[0.106m] text-brand-green-600">Flash Info</p>
         <p className="mt-1 text-sm font-semibold text-brand-purple-800">Le cours de Yin yoga/Fascias est complet le mardi.</p>
         <p className="mt-1 text-sm font-semibold text-brand-purple-800">Nous avons créé un nouveau créneau le mercredi à 17h00, il reste quelques places !</p>
       </div>
