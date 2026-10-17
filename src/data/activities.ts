@@ -129,7 +129,7 @@ export const activities: Activity[] = [
     audience: 'Adulte & Senior',
     icon: 'Activity',
     color: 'purple',
-    img:"/images/PilatesF.jpg",
+    img:"/images/Pilates.jpg",
     animateur : 'Lyana ou Roland'
   },
   
