@@ -12,6 +12,76 @@ export type GalleryItem = {
 
 export const gallery: GalleryItem[] = [
   {
+    id: '10',
+    src: '/images/Marche2_Nordique11-2026.jpeg',
+    alt: 'Marche nordique à Saint Estève à Activ\u2019 Sport Rivesaltes',
+    caption: 'Marche nordique',
+    category: 'Cours',
+  },
+  {
+    id: '11',
+    src: '/images/Marche_Nordique11-2026.jpeg',
+    alt: 'Marche nordique à Saint Estève à Activ\u2019 Sport Rivesaltes',
+    caption: 'Marche nordique',
+    category: 'Cours',
+  },
+  {
+    id: '12',
+    src: '/images/Marche_Nordique10-2026.jpeg',
+    alt: 'Marche nordique à Activ\u2019 Sport Rivesaltes',
+    caption: 'Marche nordique',
+    category: 'Cours',
+  },
+  {
+    id: '13',
+    src: '/images/Marche2_Nordique10-2026.jpeg',
+    alt: 'Marche nordique à Activ\u2019 Sport Rivesaltes',
+    caption: 'Marche nordique',
+    category: 'Cours',
+  },
+  {
+    id: '14',
+    src: '/images/Marche3_Nordique10-2026.jpeg',
+    alt: 'Marche nordique à Activ\u2019 Sport Rivesaltes',
+    caption: 'Marche nordique',
+    category: 'Cours',
+  },{
+    id: '15',
+    src: '/images/Marche4_Nordique10-2026.jpeg',
+    alt: 'Marche nordique à Activ\u2019 Sport Rivesaltes',
+    caption: 'Marche nordique',
+    category: 'Cours',
+  },
+  {
+    id: '16',
+    src: '/images/Marche5_Nordique10-2026.jpeg',
+    alt: 'Marche nordique à Activ\u2019 Sport Rivesaltes',
+    caption: 'Marche nordique',
+    category: 'Cours',
+    },
+    {
+    id: '17',
+    src: '/images/Yoga_10-2026.jpg',
+    alt: 'Yoga à Activ\u2019 Sport Rivesaltes',
+    caption: 'Yoga',
+    category: 'Cours',
+    },
+   
+    {
+    id: '18',
+    src: '/images/Pilates3_10-2026.jpg',
+    alt: 'Pilates à Activ\u2019 Sport Rivesaltes',
+    caption: 'Pilates',
+    category: 'Cours',
+    },
+    {
+    id: '19',
+    src: '/images/Pilates_10-2026.jpg',
+    alt: 'Pilates à Activ\u2019 Sport Rivesaltes',
+    caption: 'Pilates',
+    category: 'Cours',
+    },
+  {
     id: '1',
     src: '/images/PilatesF.jpg',
     alt: 'Cours de Pilates en salle à Activ\u2019 Sport Rivesaltes',
