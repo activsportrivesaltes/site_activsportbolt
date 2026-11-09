@@ -12,6 +12,25 @@ export type GalleryItem = {
 
 export const gallery: GalleryItem[] = [
   {
+    id: '20',
+    src: '/images/Gym_Plein_Air-112026.jpg',
+    alt: 'Marche nordique à Saint Estève à Activ\u2019 Sport Rivesaltes',
+    caption: 'Marche nordique',
+    category: 'Cours',
+  },{
+    id: '21',
+    src: '/images/Gym2_Plein_Air-112026.jpg',
+    alt: 'Marche nordique à Saint Estève à Activ\u2019 Sport Rivesaltes',
+    caption: 'Marche nordique',
+    category: 'Cours',
+  },{
+    id: '22',
+    src: '/images/Gym3_Plein_Air-112026.jpg',
+    alt: 'Marche nordique à Saint Estève à Activ\u2019 Sport Rivesaltes',
+    caption: 'Marche nordique',
+    category: 'Cours',
+  },
+  {
     id: '10',
     src: '/images/Marche2_Nordique11-2026.jpeg',
     alt: 'Marche nordique à Saint Estève à Activ\u2019 Sport Rivesaltes',
@@ -66,7 +85,6 @@ export const gallery: GalleryItem[] = [
     caption: 'Yoga',
     category: 'Cours',
     },
-   
     {
     id: '18',
     src: '/images/Pilates3_10-2026.jpg',

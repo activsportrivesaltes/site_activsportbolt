@@ -48,6 +48,16 @@ export default function PlanningPage() {
         eyebrow="Planning"
         title="Horaires des cours 2026 – 2027"
         subtitle="Retrouvez tous les créneaux par jour, lieu et niveau. Les séances ont lieu à l'Ami-Club, à l'ancienne mairie ou en extérieur."
+        children={
+          <>
+            Les cours sont proposés de septembre à juin, sur une durée de 36 semaines (dates variables selon le calendrier).<br />
+            Les cours ne sont pas assurés :<br />
+            - La deuxième semaine des vacances scolaires ;<br />
+            - Pendant les deux semaines des vacances de Noël ;<br />
+            - Les jours fériés.<br /><br />
+            Si vous êtes inscrit(e) à un ou deux cours et que ceux-ci tombent un jour férié, il est tout à fait possible de rattraper votre séance en participant à un autre cours.
+          </>
+        }
       />
 
       <section className="container-page py-10 sm:py-12">
